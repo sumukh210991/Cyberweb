@@ -1,0 +1,13 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ez_setup.download_setuptools",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ez_setup.use_setuptools",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceez__setup.html#a66dbd61665af1fc8f89b60d4978bee40"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ez_setup.main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceez__setup.html#a560f04bfc77f23edc5ff771a484dd3d4"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ez_setup.update_md5",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespaceez__setup.html#abf5e2589897175c0720336a5bce96511"];
+}

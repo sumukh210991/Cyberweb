@@ -1,0 +1,127 @@
+[
+    { "title": "CyberWeb", "controller":"homepage", "action":"index", "description":"",
+                "submenu":[
+                                { "title": "Welcome", "controller":"homepage", "action":"index", "description":"",
+                                "submenu":[]
+                                },
+                                { "title": "About", "controller":"homepage", "action":"aboutpage", "description":"",
+                                "submenu":[
+                                                {"title": "About", "controller":"user", "action":"about"},
+                                                {"title": "GCEM Team", "controller":"user", "action":"gcemteam"},
+                                                {"title": "CyberWeb Project", "controller":"user", "action":"cwproj"}
+                                ]
+                                },
+                                { "title": "News", "controller":"homepage", "action":"news", "description":"",
+                                "submenu":[]
+                                },
+                                { "title": "Contact", "controller":"homepage", "action":"contact", "description":"",
+                                "submenu":[]
+                                }
+                 ]
+    },
+    { "title": "MyCyberWeb", "controller":"user", "action":"index",
+                "submenu":[
+                                { "title": "Account Settings", "controller":"user", "action":"settings", "description":"" ,
+                                "submenu":[
+                                        { "title": "User Info", "controller":"user", "action":"settings", "description":"" },
+                                        { "title": "Prefs", "controller":"user", "action":"settings", "description":"" },
+                                        { "title": "CWPassword", "controller":"authentication", "action":"reset_password", "description":"" },
+                                        { "title": "Res. Accts", "controller":"user", "action":"configureAccount" },
+                                        { "title": "Groups", "controller":"user", "action":"settings", "description":"" }
+                                        ]
+                                },
+                                { "title": "Authentication", "controller":"authentication", "action":"index", "description":"",
+                                        "submenu":[
+                                                { "title": "CyberWeb Password", "controller":"authentication", "action":"reset_password"},
+                                                { "title": "PKI Credentials", "controller":"pkiproxy", "action":"index",
+                                                        "submenu":[
+                                                        { "title": "CredInfo", "controller":"pkiproxy", "action":"pkiproxy_info" },
+                                                        { "title": "AddResource", "controller":"pkiproxy", "action":"pkiproxy_addresource" },
+                                                        { "title": "Create", "controller":"pkiproxy", "action":"pkiproxy_create" },
+                                                        { "title": "PublicPrivateKey", "controller":"pkiproxy", "action":"publicprivatekey" }
+                                                        ]
+                                                },
+                                                { "title": "GSI Credentials", "controller":"gsicreds", "action":"index", "description":"",
+                                                        "submenu":[
+                                                        { "title": "Status", "controller":"gsicreds", "action":"gsicreds_stat" },
+                                                        { "title": "CredInfo", "controller":"gsicreds", "action":"gsicreds_info" },
+                                                        { "title": "Create", "controller":"gsicreds", "action":"gsicreds_create" },
+                                                        { "title": "Renew", "controller":"gsicreds", "action":"gsicreds_renew" },
+                                                        { "title": "Upload", "controller":"gsicreds", "action":"gsicreds_upload" },
+                                                        { "title": "Delete", "controller":"gsicreds", "action":"gsicreds_del" }
+                                                        ]
+                                                }
+                                        ]
+                                },
+                                { "title": "Resources and Services", "controller":"user", "action":"services",
+                                	"submenu":[
+                                        { "title": "Configure Account", "controller":"user", "action":"configureAccount" }
+                                	]
+                                },
+                                { "title": "Messages", "controller":"user", "action":"messages" }
+                        ]
+    },
+    { "title": "GCCOM", "controller":"gccom", "action":"index", "description":"" ,
+                "submenu":[
+                        { "title": "GCEM Demo Jobs", "controller":"gccom", "action":"demo", "description":"",
+                                "submenu":[
+                                                { "title": "Lid Drvn Cav. II", "controller":"gccom", "action":"demo_ldc2" },
+                                                { "title": "Temperature I", "controller":"gccom", "action":"demo_temperature1" },
+                                                { "title": "Temperature II", "controller":"gccom", "action":"demo_temperature2" },
+                                                { "title": "Seamount I", "controller":"gccom", "action":"demo_seamount1" }
+                                ]
+                        },
+                        { "title": "GCEM Test Jobs", "controller":"gccom", "action":"test", "description":"",
+                                "submenu":[
+                                                { "title": "Lid Drvn Cav. II", "controller":"gccom", "action":"test_ldc2" },
+                                                { "title": "Temperature I", "controller":"gccom", "action":"test_temperature1" },
+                                                { "title": "Temperature II", "controller":"gccom", "action":"test_temperature2" },
+                                                { "title": "Seamount I", "controller":"gccom", "action":"test_seamount1" }
+                                ]
+                        },
+                        { "title": "Job Monitor", "controller":"gccom", "action":"jobmonitor", "description":"" },
+                        { "title": "Job Summary", "controller":"gccom", "action":"jobsummary", "description":"" },
+                        { "title": "[GCEM Simulations]", "controller":"gccom", "action":"sim", "description":"" },
+                        { "title": "GCEM Help", "controller":"gccom", "action":"help", "description":"" }
+                ]
+    },
+    { "title": "Demos & Tests", "controller":"demo", "action":"index", "description":"",
+                "submenu":[
+                        { "title": "Unix Tests", "controller":"demo", "action":"cmd_ssh", "description":"",
+                                "submenu":[
+                                                { "title": " SSH Cmd", "controller":"demo", "action":"cmd_ssh" },
+                                                { "title": " GSISSH Cmd", "controller":"demo", "action":"cmd_gsissh" },
+                                                { "title": "Basic Job", "controller":"demo", "action":"basicjob" },
+                                                { "title": "Batch Job", "controller":"demo", "action":"batch" },
+                                                { "title": "JODIS Job", "controller":"demo", "action":"jodis" }
+                                ]
+                        },
+                        { "title": "Community App Test", "controller":"exec", "action":"index", "description":"" },
+                        { "title": "Res & Serv", "controller":"exec", "action":"index", "description":"" },
+                        { "title": "Job Monitor", "controller":"exec", "action":"jobmonitor", "description":"" },
+                        { "title": "Job Summary", "controller":"exec", "action":"jobsummary", "description":"" }
+                ]
+    },
+    { "title": "Data", "controller":"data", "action":"index", "description":"",
+                "submenu":[
+                        { "title": "File Transfer", "controller":"data", "action":"index", "description":"" },
+                        { "title": "Upload a File Summary", "controller":"data", "action":"upload", "description":"" },
+                        { "title": "Job Monitor", "controller":"data", "action":"jobmonitor", "description":"" },
+                        { "title": "Job Summary", "controller":"data", "action":"jobsummary", "description":"" },
+                        { "title": "Post Job Analysis", "controller":"postjob", "action":"index", "description":"" }
+                ]
+    },
+    { "title": "Admin", "auth": "True", "controller":"newadmin", "action":"groupDetails", "description":"",
+                "submenu":[
+                        { "title": "Configure Services", "controller":"newadmin", "action":"resourceServiceLinkDetails", "description":"" },
+                        { "title": "CW User", "controller":"newadmin", "action":"groupDetails", "description":"" },
+                        { "title": "Protocol", "controller":"newadmin", "action":"protocolDetails", "description":"" },
+                        { "title": "Message", "controller":"newadmin", "action":"messageDetails", "description":"" },
+                        { "title": "Resource", "controller":"newadmin", "action":"resourceDetails", "description":"" },
+                        { "title": "Service", "controller":"newadmin", "action":"serviceDetails", "description":"" },
+                        { "title": "Account", "controller":"newadmin", "action":"accountDetails", "description":"" },
+                        { "title": "Queue", "controller":"newadmin", "action":"queueDetails", "description":"" },
+                        { "title": "Job", "controller":"newadmin", "action":"jobDetails", "description":"" }
+                ]
+    }
+]

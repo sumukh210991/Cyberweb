@@ -1,0 +1,85 @@
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group}{\section{cyberweb.\-model.\-user.\-Group \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1user_1_1_group}\index{cyberweb.\-model.\-user.\-Group@{cyberweb.\-model.\-user.\-Group}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1user_1_1_group_a8a7f46b1acd3a7bb622de8d2cd2f4597}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1user_1_1_group_a09a6013724c62901e22b926350a67867}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_group_aacb186c6ff7d713002e50f2ebcb9dd93}{user\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_group_a19fa4782728159211e1f30928dff2b04}{group\-\_\-id}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_group_ad236993ccf316da8f760735f5f418c85}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_group_ae367d58cb0b0418e265cd122a2706b4f}{user\-\_\-id} = \-Column(\-Integer, \-Foreign\-Key('user.\-id'))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_group_a39de1ba0e8c26d8c6a108f14b86cdd14}{group\-\_\-definition\-\_\-id} = \-Column(\-Integer, \-Foreign\-Key('group\-\_\-definition.\-id'))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_group_ab45c2c9f4291eeb4dfeff978c640c75c}{user} = relation('\hyperlink{classcyberweb_1_1model_1_1user_1_1_user}{\-User}', backref=backref('groups', order\-\_\-by=\hyperlink{classcyberweb_1_1model_1_1user_1_1_group_ad236993ccf316da8f760735f5f418c85}{id}))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_group_a2622971c54024796c9b838db8af0c305}{group\-\_\-definition} = relation('\hyperlink{classcyberweb_1_1model_1_1user_1_1_group_definition}{\-Group\-Definition}', backref=backref('members', order\-\_\-by=\hyperlink{classcyberweb_1_1model_1_1user_1_1_group_ad236993ccf316da8f760735f5f418c85}{id}))
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_a8a7f46b1acd3a7bb622de8d2cd2f4597}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-user.\-Group.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{user\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{group\-\_\-id = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1user_1_1_group_a8a7f46b1acd3a7bb622de8d2cd2f4597}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_a09a6013724c62901e22b926350a67867}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-user.\-Group.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1user_1_1_group_a09a6013724c62901e22b926350a67867}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_a2622971c54024796c9b838db8af0c305}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!group\-\_\-definition@{group\-\_\-definition}}
+\index{group\-\_\-definition@{group\-\_\-definition}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{group\-\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-Group\-::group\-\_\-definition} = relation('{\bf \-Group\-Definition}', backref=backref('members', order\-\_\-by={\bf id}))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_group_a2622971c54024796c9b838db8af0c305}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_a39de1ba0e8c26d8c6a108f14b86cdd14}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!group\-\_\-definition\-\_\-id@{group\-\_\-definition\-\_\-id}}
+\index{group\-\_\-definition\-\_\-id@{group\-\_\-definition\-\_\-id}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{group\-\_\-definition\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-Group\-::group\-\_\-definition\-\_\-id} = \-Column(\-Integer, \-Foreign\-Key('group\-\_\-definition.\-id'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_group_a39de1ba0e8c26d8c6a108f14b86cdd14}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_a19fa4782728159211e1f30928dff2b04}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!group\-\_\-id@{group\-\_\-id}}
+\index{group\-\_\-id@{group\-\_\-id}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{group\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-Group\-::group\-\_\-id}}}\label{classcyberweb_1_1model_1_1user_1_1_group_a19fa4782728159211e1f30928dff2b04}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_ad236993ccf316da8f760735f5f418c85}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!id@{id}}
+\index{id@{id}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-Group\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_group_ad236993ccf316da8f760735f5f418c85}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_ab45c2c9f4291eeb4dfeff978c640c75c}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!user@{user}}
+\index{user@{user}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-Group\-::user} = relation('{\bf \-User}', backref=backref('groups', order\-\_\-by={\bf id}))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_group_ab45c2c9f4291eeb4dfeff978c640c75c}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_ae367d58cb0b0418e265cd122a2706b4f}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!user\-\_\-id@{user\-\_\-id}}
+\index{user\-\_\-id@{user\-\_\-id}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-Group\-::user\-\_\-id} = \-Column(\-Integer, \-Foreign\-Key('user.\-id'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_group_ae367d58cb0b0418e265cd122a2706b4f}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_group_aacb186c6ff7d713002e50f2ebcb9dd93}{\index{cyberweb\-::model\-::user\-::\-Group@{cyberweb\-::model\-::user\-::\-Group}!user\-\_\-id@{user\-\_\-id}}
+\index{user\-\_\-id@{user\-\_\-id}!cyberweb::model::user::Group@{cyberweb\-::model\-::user\-::\-Group}}
+\subsubsection[{user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-Group\-::user\-\_\-id}}}\label{classcyberweb_1_1model_1_1user_1_1_group_aacb186c6ff7d713002e50f2ebcb9dd93}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{model_2user_8py}{user.\-py}\end{DoxyCompactItemize}

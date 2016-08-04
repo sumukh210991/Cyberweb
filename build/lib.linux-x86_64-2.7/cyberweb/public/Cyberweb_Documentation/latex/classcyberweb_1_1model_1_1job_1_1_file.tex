@@ -1,0 +1,78 @@
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file}{\section{cyberweb.\-model.\-job.\-File \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1job_1_1_file}\index{cyberweb.\-model.\-job.\-File@{cyberweb.\-model.\-job.\-File}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_a0693ec870c45bd4c979665c14e584927}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_ac470f316fdbba692bad0b8ea0f6d756a}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_a79185602853ec81864ade6f5a58384d0}{task\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}task.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_a0301a658dbd9fd867ab5fb889336c6be}{service\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}service.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_a6d0fae156bd6295c007be75da2f6bf38}{endpoint\-\_\-ref} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_aae96f7b15acb5ffe444de5d4fc834184}{size} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_a418553bb8f4f82a639c52381e43463aa}{format} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_ac7e6ef419642dcd23db3fc3b1646a5b2}{type} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_ab713777dd38678c1850a1360cf76115a}{task} = relation(\hyperlink{classcyberweb_1_1model_1_1job_1_1_task}{\-Task})
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_file_af9f74a90be41957ce9f09f86c6981fd7}{service} = relation(\-Service)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_a0693ec870c45bd4c979665c14e584927}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-job.\-File.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1job_1_1_file_a0693ec870c45bd4c979665c14e584927}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_a6d0fae156bd6295c007be75da2f6bf38}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!endpoint\-\_\-ref@{endpoint\-\_\-ref}}
+\index{endpoint\-\_\-ref@{endpoint\-\_\-ref}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{endpoint\-\_\-ref}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::endpoint\-\_\-ref} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_a6d0fae156bd6295c007be75da2f6bf38}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_a418553bb8f4f82a639c52381e43463aa}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!format@{format}}
+\index{format@{format}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::format} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_a418553bb8f4f82a639c52381e43463aa}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_ac470f316fdbba692bad0b8ea0f6d756a}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!id@{id}}
+\index{id@{id}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_ac470f316fdbba692bad0b8ea0f6d756a}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_af9f74a90be41957ce9f09f86c6981fd7}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!service@{service}}
+\index{service@{service}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{service}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::service} = relation(\-Service)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_af9f74a90be41957ce9f09f86c6981fd7}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_a0301a658dbd9fd867ab5fb889336c6be}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!service\-\_\-id@{service\-\_\-id}}
+\index{service\-\_\-id@{service\-\_\-id}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{service\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::service\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}service.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_a0301a658dbd9fd867ab5fb889336c6be}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_aae96f7b15acb5ffe444de5d4fc834184}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!size@{size}}
+\index{size@{size}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::size} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_aae96f7b15acb5ffe444de5d4fc834184}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_ab713777dd38678c1850a1360cf76115a}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!task@{task}}
+\index{task@{task}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{task}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::task} = relation({\bf \-Task})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_ab713777dd38678c1850a1360cf76115a}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_a79185602853ec81864ade6f5a58384d0}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!task\-\_\-id@{task\-\_\-id}}
+\index{task\-\_\-id@{task\-\_\-id}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{task\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::task\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}task.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_a79185602853ec81864ade6f5a58384d0}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_file_ac7e6ef419642dcd23db3fc3b1646a5b2}{\index{cyberweb\-::model\-::job\-::\-File@{cyberweb\-::model\-::job\-::\-File}!type@{type}}
+\index{type@{type}!cyberweb::model::job::File@{cyberweb\-::model\-::job\-::\-File}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-File\-::type} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_file_ac7e6ef419642dcd23db3fc3b1646a5b2}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{job_8py}{job.\-py}\end{DoxyCompactItemize}

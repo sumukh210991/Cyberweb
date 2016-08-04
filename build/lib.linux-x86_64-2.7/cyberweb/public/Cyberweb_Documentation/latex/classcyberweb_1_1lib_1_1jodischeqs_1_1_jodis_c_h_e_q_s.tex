@@ -1,0 +1,170 @@
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s}{\section{cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S \-Class \-Reference}
+\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s}\index{cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S@{cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S}}
+}
+
+
+\-Inherits \-Jodis.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a57a727fbb2ea9e1ea5b7e9ebd18672ed}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_ae45f4ed0aa13d2d5bc250b02ac3aa681}{add\-Tasks}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a0c9d3232033f67f105b48500f360a870}{clear\-Tasks}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_aeaaeade13f52d0e1678d10b9ce54a690}{split\-Tasks}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_aee03daa548bf526d45d0b69f65f7854e}{job\-Finished}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a3f3a6da4cfcbc22481b3895b418d533a}{get\-Results}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a1a734a142191a1a1b01ef3e258ef4428}{parse\-Results}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a44ee8e0c059e63312213d3c24638bf1e}{calc\-Stats}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_abc5adff353bfc79929ee61993c418030}{submit\-Jobs}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a44e02e6339c8318d841b058849cabf9a}{tasklist}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a7beec5fd679133037c0a6fe395e7e8fc}{tasks}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_abee6059482ef437b394ce2cde921cdbb}{jobtracker}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_acdd7409c76f2b0cb8a49bad2efa9234e}{jobdir}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a9312979f1ee3d2aa1baeadef1c827444}{jobstem}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a8e12823e6b748f142a0ec1d285a88244}{jobfiles}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}
+This class is the core backend of the gateway. The web service and
+WSDL will plug into this class.
+\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a57a727fbb2ea9e1ea5b7e9ebd18672ed}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{manager, }
+\item[{}]{config = {\ttfamily \{\}}, }
+\item[{}]{jobdir = {\ttfamily \-None}, }
+\item[{}]{jobstem = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a57a727fbb2ea9e1ea5b7e9ebd18672ed}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_ae45f4ed0aa13d2d5bc250b02ac3aa681}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!add\-Tasks@{add\-Tasks}}
+\index{add\-Tasks@{add\-Tasks}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{add\-Tasks}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-add\-Tasks} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{file = {\ttfamily \-None}, }
+\item[{}]{string = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_ae45f4ed0aa13d2d5bc250b02ac3aa681}
+\begin{DoxyVerb}
+Add tasks to our list. Tasks can be added in the form of a JSON string
+or a file containing these JSON strings (one per line).
+They will be stored as one aggregate list to be parsed when
+all the jobs are added
+\end{DoxyVerb}
+ \hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a44ee8e0c059e63312213d3c24638bf1e}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!calc\-Stats@{calc\-Stats}}
+\index{calc\-Stats@{calc\-Stats}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{calc\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-calc\-Stats} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a44ee8e0c059e63312213d3c24638bf1e}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a0c9d3232033f67f105b48500f360a870}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!clear\-Tasks@{clear\-Tasks}}
+\index{clear\-Tasks@{clear\-Tasks}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{clear\-Tasks}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-clear\-Tasks} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a0c9d3232033f67f105b48500f360a870}
+\begin{DoxyVerb}
+Clear the queue of tasks.
+\end{DoxyVerb}
+ \hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a3f3a6da4cfcbc22481b3895b418d533a}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!get\-Results@{get\-Results}}
+\index{get\-Results@{get\-Results}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{get\-Results}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-get\-Results} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dsthost = {\ttfamily \-None}, }
+\item[{}]{dstpath = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a3f3a6da4cfcbc22481b3895b418d533a}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_aee03daa548bf526d45d0b69f65f7854e}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!job\-Finished@{job\-Finished}}
+\index{job\-Finished@{job\-Finished}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{job\-Finished}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-job\-Finished} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_aee03daa548bf526d45d0b69f65f7854e}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a1a734a142191a1a1b01ef3e258ef4428}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!parse\-Results@{parse\-Results}}
+\index{parse\-Results@{parse\-Results}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{parse\-Results}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-parse\-Results} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dsthost = {\ttfamily \-None}, }
+\item[{}]{dstpath = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a1a734a142191a1a1b01ef3e258ef4428}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_aeaaeade13f52d0e1678d10b9ce54a690}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!split\-Tasks@{split\-Tasks}}
+\index{split\-Tasks@{split\-Tasks}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{split\-Tasks}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-split\-Tasks} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{max\-Jobs = {\ttfamily 0}, }
+\item[{}]{min\-Tasks = {\ttfamily 10}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_aeaaeade13f52d0e1678d10b9ce54a690}
+\begin{DoxyVerb}
+Split the tasks in the queue into sizeable chunks which will later be
+dispersed across the various resources.
+\end{DoxyVerb}
+ \hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_abc5adff353bfc79929ee61993c418030}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!submit\-Jobs@{submit\-Jobs}}
+\index{submit\-Jobs@{submit\-Jobs}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{submit\-Jobs}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodischeqs.\-Jodis\-C\-H\-E\-Q\-S.\-submit\-Jobs} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_abc5adff353bfc79929ee61993c418030}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_acdd7409c76f2b0cb8a49bad2efa9234e}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!jobdir@{jobdir}}
+\index{jobdir@{jobdir}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{jobdir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodischeqs.\-Jodis\-C\-H\-E\-Q\-S\-::jobdir}}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_acdd7409c76f2b0cb8a49bad2efa9234e}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a8e12823e6b748f142a0ec1d285a88244}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!jobfiles@{jobfiles}}
+\index{jobfiles@{jobfiles}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{jobfiles}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodischeqs.\-Jodis\-C\-H\-E\-Q\-S\-::jobfiles}}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a8e12823e6b748f142a0ec1d285a88244}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a9312979f1ee3d2aa1baeadef1c827444}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!jobstem@{jobstem}}
+\index{jobstem@{jobstem}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{jobstem}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodischeqs.\-Jodis\-C\-H\-E\-Q\-S\-::jobstem}}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a9312979f1ee3d2aa1baeadef1c827444}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_abee6059482ef437b394ce2cde921cdbb}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!jobtracker@{jobtracker}}
+\index{jobtracker@{jobtracker}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{jobtracker}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodischeqs.\-Jodis\-C\-H\-E\-Q\-S\-::jobtracker}}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_abee6059482ef437b394ce2cde921cdbb}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a44e02e6339c8318d841b058849cabf9a}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!tasklist@{tasklist}}
+\index{tasklist@{tasklist}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{tasklist}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodischeqs.\-Jodis\-C\-H\-E\-Q\-S\-::tasklist}}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a44e02e6339c8318d841b058849cabf9a}
+\hypertarget{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a7beec5fd679133037c0a6fe395e7e8fc}{\index{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}!tasks@{tasks}}
+\index{tasks@{tasks}!cyberweb::lib::jodischeqs::JodisCHEQS@{cyberweb\-::lib\-::jodischeqs\-::\-Jodis\-C\-H\-E\-Q\-S}}
+\subsubsection[{tasks}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodischeqs.\-Jodis\-C\-H\-E\-Q\-S\-::tasks}}}\label{classcyberweb_1_1lib_1_1jodischeqs_1_1_jodis_c_h_e_q_s_a7beec5fd679133037c0a6fe395e7e8fc}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/lib/\hyperlink{jodischeqs_8py}{jodischeqs.\-py}\end{DoxyCompactItemize}

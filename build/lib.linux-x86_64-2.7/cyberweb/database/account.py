@@ -1,0 +1,395 @@
+import logging
+import DatabaseOperations
+import json
+import shlex
+import sys
+import re
+
+from formalchemy import FieldSet, Grid
+import sqlalchemy as sa
+import sqlalchemy.exceptions as sa_error
+
+from pylons import config, request, response, session, app_globals, tmpl_context as c, config
+from cyberweb.model import meta, Account, AuthKey, User, Service
+from cyberweb.model.resource import Resource
+from cyberweb.model.service import ServiceName 
+from cyberweb.controllers.pkiproxy import PkiproxyController
+from paste import httpexceptions
+from cyberweb.lib.jodis.sshresource import ssh
+from config import Config
+
+log = logging.getLogger(__name__)
+
+class AccountOperation(object):
+
+    def add(self, parameters):
+        if parameters:
+            userName = ''
+            userId = 0
+            password = ''
+            description = ''
+            accountId = 0
+            accountName = ''
+            resourceId = 0
+            serviceId = 0
+            active = True
+            isCreateKeys = False
+            authKeyId = ''
+            jdata = json.loads(parameters)
+            for key, value in jdata.iteritems():
+                if key == 'accountId':
+                    accountId = value
+                elif key == 'accountName':
+                    accountName = value
+                elif key == 'userId':
+                    userId = value
+                elif key == 'userName':
+                    userName = value
+                elif key =='password':
+                    password = value
+                elif key == 'resourceId':
+                    resourceId = int(value)
+                elif key == 'serviceId':
+                    serviceId = int(value)
+                elif key == 'description':
+                    description = value
+                elif key == 'active':
+                    active = value
+                elif key =='isCreateKeys':
+                    isCreateKeys = value
+
+            if active == 'True':
+                active = 1
+            else:
+                active = 0
+
+            c.warning = ''
+            if isCreateKeys == True:
+                try: resourceId = int(resourceId)
+                except Exception as _: c.error = 'Problems interpreting resource ID.'
+                if not resourceId:
+                    return '{"Error":"Please select a host"}'
+                elif not userName:
+                    return '{"Error":"Please enter a username"}'
+                elif not password:
+                    return '{"Error":"Please enter a password"}'
+
+                current_keys = meta.Session.query(AuthKey).filter(AuthKey.user_id == session['user_id']).all()
+                has_key = bool(current_keys)
+                keymade = False
+                if not current_keys:
+                    keymade = True
+                    proxyObj = PkiproxyController()
+                    if proxyObj._create_key():
+                        current_keys = meta.Session.query(AuthKey).filter(AuthKey.user_id == session['user_id']).all()
+                        has_key = True
+                    else:
+                        return '{"Error":"Could not generate a key"}'
+
+                c.connection_error = ''
+
+                resource = meta.Session.query(Resource).get(resourceId)
+
+                if has_key:
+                    try:
+                        sshconnect = ssh(resource.hostname, userName, password=password)
+                        #sshconnect.sshCredentials(current_keys)
+                        for key in current_keys:
+                            authKeyId = key.id
+                            directory = "~/.ssh"
+                            keys_file = "~/.ssh/authorized_keys"
+                            sshconnect.run('if [ ! -d .ssh ]; then mkdir .ssh; chmod 700 .ssh; fi')
+                            id_string = 'CyberWeb Key %d for %s' % (key.id, userName)
+                            grep = sshconnect.run('grep "%s" %s' % (id_string, keys_file))
+                            if id_string not in grep[0]:
+                                sshconnect.run('echo "ssh-dss %s # %s" >> %s; chmod 600 %s' % (key.public_key, id_string, keys_file, keys_file))
+                                c.warning = ''
+                            else:
+                                c.warning = 'Key already exists for user, Over writing Key !!'
+                                sshconnect.run("sed '/%s/d' %s > %s/authorized_keys_new" % (id_string, keys_file, directory))
+                                sshconnect.run('rm %s' % keys_file)
+                                sshconnect.run('mv %s/authorized_keys_new %s' % (directory, keys_file))
+                                sshconnect.run('echo "ssh-dss %s # %s" >> %s; chmod 600 %s' % (key.public_key, id_string, keys_file, keys_file))
+                    except Exception as e:
+                        print e
+                        return '{"Error":"Error While Connecting to resource %s. Please verify your username and password"}' % resource.hostname
+            
+            existingAccount = meta.Session.query(Account).filter(sa.and_(Account.user_id == userId,sa.and_(Account.resource_id == resourceId,Account.service_id == serviceId))).first();
+            if existingAccount:
+                return '{"Error":"Resource %s is already have a account on %s service. Please modify existing account."}' % (resource.hostname,existingAccount.service_name.name)
+            
+            accountObj = Account(accountName,userName,resourceId,'',authKeyId,userId,2,serviceId,serviceId,description)
+            service = meta.Session.query(Service).filter(Service.id == serviceId).first();
+            if service:
+                accountObj.default_servicename_id = service.servicename_id
+
+            if accountObj.service_name:
+                accountObj.service_name.active = True
+
+            if accountObj.resource:
+                accountObj.resource.active = True
+
+            meta.Session.add(accountObj)
+            meta.Session.commit()
+            meta.Session.close()
+
+            try:
+                if isCreateKeys:
+                    self.jodis_connect(accountObj.id)
+            except Exception as e:
+                print e
+                return '{"Error":"Error While Adding %s resource to available list. Please contact resource administrator"}' % resource.hostname
+            #meta.Session.close()
+
+        return '{"message":"New Account Added Successfully","dataId":"%d","warning":"%s"}' % (accountObj.id,c.warning)
+
+    def update(self, parameters):
+        if parameters:
+            userName = ''
+            userId = 0
+            description = ''
+            accountId = 0
+            accountName = ''
+            resourceId = 0
+            serviceId = 0
+            active = True
+            jdata = json.loads(parameters)
+            for key, value in jdata.iteritems():
+                if key == 'accountId':
+                    accountId = value
+                elif key == 'accountName':
+                    accountName = value
+                elif key == 'userId':
+                    userId = value
+                elif key == 'userName':
+                    userName = value
+                elif key == 'resourceId':
+                    resourceId = int(value)
+                elif key == 'serviceId':
+                    serviceId = int(value)
+                elif key == 'description':
+                    description = value
+                elif key == 'active':
+                    active = value
+
+            if active == 'True':
+                active = 1
+            else:
+                active = 0
+            
+            existingAccount = meta.Session.query(Account).filter(sa.and_(Account.user_id == userId,sa.and_(Account.resource_id == resourceId,Account.service_id == serviceId))).first();
+            if existingAccount:
+                return '{"Error":"Resource %s is already have a account on %s service. Please modify existing account."}' % (resource.hostname,existingAccount.service_name.name)
+            
+            accountObj = meta.Session.query(Account).filter(Account.id == accountId).first()
+
+            accountObj.name = accountName
+            accountObj.description = description
+            accountObj.username = userName
+            accountObj.user_id = userId
+            accountObj.resource_id = resourceId
+            accountObj.service_id = serviceId
+            accountObj.active = active
+
+            service = meta.Session.query(Service).filter(Service.id == serviceId).first();
+            if service:
+                accountObj.default_servicename_id = service.servicename_id
+
+            #accountObj.default_servicename_id = serviceId
+            #meta.Session.save(accountObj)
+            meta.Session.commit()
+            self.jodis_connect(accountObj.id)
+
+            #meta.Session.close()
+
+        return '{"message":"Changes saved successfully"}'
+
+    def delete(self, parameters):
+        deleteCount = 1
+        session = meta.Session()
+        jdata = json.loads(parameters)
+        ids = []
+        for key, value in jdata.iteritems():
+            if key == 'deleteId':
+                my_splitter = shlex.shlex(value, posix=True)
+                my_splitter.whitespace += ','
+                my_splitter.whitespace_split = True
+                ids = list(my_splitter)
+                break
+        for id in ids:
+            id = id.replace("\0", "")
+            if id:
+                id = int(id)
+                accountObj = meta.Session.query(Account).filter(Account.id == id).one()
+                accountObj.active = 0
+                session.commit()
+                self.jodis_connect(accountObj.id)
+                session.delete(accountObj)
+                deleteCount = deleteCount + 1
+
+        session.commit()
+        #meta.Session.close()
+
+        return '{"message":"%d records deleted"}' % deleteCount
+
+    def userDelete(self, parameters):
+        deleteCount = 1
+        session = meta.Session()
+        jdata = json.loads(parameters)
+        ids = []
+        for key, value in jdata.iteritems():
+            if key == 'deleteId':
+                my_splitter = shlex.shlex(value, posix=True)
+                my_splitter.whitespace += ','
+                my_splitter.whitespace_split = True
+                ids = list(my_splitter)
+                break
+        for id in ids:
+            id = id.replace("\0", "")
+            if id:
+                id = int(id)
+                accountObj = meta.Session.query(Account).filter(Account.id == id).one()
+                accountObj.active = 0
+                session.commit()
+                self.jodis_connect(accountObj.id)
+                deleteCount = deleteCount + 1
+
+        session.commit()
+        #meta.Session.close()
+
+        return '{"message":"%d records deleted"}' % deleteCount
+
+    def view(self, parameters):
+        accounts = meta.Session.query(Account).all()
+        dataString = '['
+        for accountNames in accounts:
+            resource = meta.Session.query(Resource).filter(Resource.id == accountNames.resource_id).first();
+            serviceName = meta.Session.query(ServiceName).filter(ServiceName.id == accountNames.default_servicename_id).first();
+            userName = meta.Session.query(User).filter(User.id == accountNames.user_id).first();
+            dataString += '\n\t{'
+            dataString += '\n\t\t"accountId":"%s",' % accountNames.id
+            dataString += '\n\t\t"accountName":"%s",' % accountNames.name
+            if userName:
+                dataString += '\n\t\t"userName":"%s",' % userName.username
+            else:
+                dataString += '\n\t\t"userName":"",'
+
+            dataString += '\n\t\t"resourceId":"%s",' % accountNames.resource_id
+            if resource:
+                dataString += '\n\t\t"resourceName":"%s",' % resource.name
+            else:
+                dataString += '\n\t\t"resourceName":"",'
+
+            dataString += '\n\t\t"serviceId":"%s",' % accountNames.service_id
+            if accountNames.service:
+                if accountNames.service.service_name:
+                    dataString += '\n\t\t"serviceName":"%s",' % accountNames.service.service_name.name
+                else:
+                    dataString += '\n\t\t"serviceName":"",'
+            elif serviceName:
+                dataString += '\n\t\t"serviceName":"%s",' % serviceName.name
+            else:
+                dataString += '\n\t\t"serviceName":"",'
+
+            dataString += '\n\t\t"description":"%s",' % accountNames.description
+            dataString += '\n\t\t"active":"%s",' % accountNames.active
+            dataString += '\n\t\t"insertDate":"%s"' % accountNames.insert_date
+            dataString += '\n\t},'
+
+        if len(dataString) > 1 :
+            dataString = dataString[0:len(dataString)-1];
+
+        dataString += '\n]'
+        return dataString
+
+    def userView(self, parameters):
+        accounts = meta.Session.query(Account).filter(sa.and_(Account.active == 1, Account.user_id == session['user_id']))
+        dataString = '['
+        for accountNames in accounts:
+            resource = meta.Session.query(Resource).filter(Resource.id == accountNames.resource_id).first();
+            serviceName = meta.Session.query(ServiceName).filter(ServiceName.id == accountNames.default_servicename_id).first();
+            dataString += '\n\t{'
+            dataString += '\n\t\t"accountId":"%s",' % accountNames.id
+            dataString += '\n\t\t"accountName":"%s",' % accountNames.name
+            dataString += '\n\t\t"userName":"%s",' % accountNames.username
+            dataString += '\n\t\t"resourceId":"%s",' % accountNames.resource_id
+            if resource:
+                dataString += '\n\t\t"resourceName":"%s",' % resource.name
+            else:
+                dataString += '\n\t\t"resourceName":"",'
+
+            dataString += '\n\t\t"serviceId":"%s",' % accountNames.service_id
+            if accountNames.service:
+                if accountNames.service.service_name:
+                    dataString += '\n\t\t"serviceName":"%s",' % accountNames.service.service_name.name
+                else:
+                    dataString += '\n\t\t"serviceName":"",'
+            elif serviceName:
+                dataString += '\n\t\t"serviceName":"%s",' % serviceName.name
+            else:
+                dataString += '\n\t\t"serviceName":"",'
+
+            dataString += '\n\t\t"description":"%s",' % accountNames.description
+            dataString += '\n\t\t"insertDate":"%s"' % accountNames.insert_date
+            dataString += '\n\t},'
+
+        if len(dataString) > 1 :
+            dataString = dataString[0:len(dataString)-1];
+
+        dataString += '\n]'
+        return dataString
+
+    def createSSHKeys(self):
+        resource_id = request.params.get('host') or ''
+        user = request.params.get('user') or ''
+        password = request.params.get('password') or ''
+        c.error = ''
+        try: resource_id = int(resource_id)
+        except Exception as _: c.error = 'Problems interpreting resource ID.'
+        if request.method == 'POST':
+            if not resource_id:
+                c.error = 'Please select a host'
+            elif not user:
+                c.error = 'Please enter a username'
+            elif not password:
+                c.error = 'Please enter a password'
+
+        current_keys = meta.Session.query(AuthKey).filter(AuthKey.user_id == session['user_id']).all()
+        has_key = bool(current_keys)
+        keymade = False
+        if not current_keys:
+            keymade = True
+            proxyObj = ProxyController()
+            if proxyObj._create_key():
+                c.error = ''
+                current_keys = meta.Session.query(AuthKey).filter(AuthKey.user_id == session['user_id']).all()
+                has_key = True
+            else:
+                c.error = 'Could not generate a key'
+
+        c.connection_error = ''
+
+    def jodis_connect(self, account_ids):
+        config = Config(file('cyberweb/lib/jodis/resources.cfg'))
+        a = meta.Session.query(Account).filter(Account.id == account_ids);
+        # Populate resources from Database. Currently connect using all accounts
+        # that match our criteria. We need/want to add logic to find the appropriate
+        # account to use.
+        for account in a.all():
+            server = account.resource
+            if app_globals.available_resources.has_key(server.hostname):
+                del(app_globals.available_resources[server.hostname])
+            if server.active == 1 and account.active == 1:
+                log.info('Making connection to %s via %s',server.name, account.name)
+                #if True or not app_globals.available_resources.has_key(server.hostname):
+                if app_globals.jodis.manager.addMyResource(account_ids, maxjobs=20, myglobals=app_globals):
+                    app_globals.available_resources[account.id] = {'hostname':server.hostname, 'name':server.name}
+                log.info('%s successfully connected to %s.' % (session.get('user','cwguest'),server.name))
+                #else:
+                    #log.info('Connection to %s already exists' % server.name)
+
+        log.info('Finished connecting to %s' % server.name)
+
+        session.save()
+        meta.Session.close()
+        

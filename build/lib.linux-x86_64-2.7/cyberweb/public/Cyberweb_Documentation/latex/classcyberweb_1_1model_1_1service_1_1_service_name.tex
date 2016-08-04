@@ -1,0 +1,80 @@
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name}{\section{cyberweb.\-model.\-service.\-Service\-Name \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1service_1_1_service_name}\index{cyberweb.\-model.\-service.\-Service\-Name@{cyberweb.\-model.\-service.\-Service\-Name}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1service_1_1_service_name_af0724210c74a6fb32131f9a563c351d0}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1service_1_1_service_name_ad6a97ec39aac298de9630615cc7a6c07}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1service_1_1_service_name_a37001950fc1fb2f526cc1e84ba813f56}{name}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1service_1_1_service_name_aeb5b949fbc24621503feb9d3f9c58deb}{servicetype\-\_\-id}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1service_1_1_service_name_a7545657c6a34f1c11ca622d8363a5ab3}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1service_1_1_service_name_a17f4f8b445a6a8e4052ceaadbdee0f1e}{name} = \-Column(\-String(25))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1service_1_1_service_name_aed285922f6a023c535aefd7ecdf1d32e}{service\-\_\-type\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}servicetype.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1service_1_1_service_name_aea507569f975bb2acec79eb5ec138f0a}{service\-\_\-type} = relation('\hyperlink{classcyberweb_1_1model_1_1service_1_1_service_type}{\-Service\-Type}')
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name_af0724210c74a6fb32131f9a563c351d0}{\index{cyberweb\-::model\-::service\-::\-Service\-Name@{cyberweb\-::model\-::service\-::\-Service\-Name}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::service::ServiceName@{cyberweb\-::model\-::service\-::\-Service\-Name}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-service.\-Service\-Name.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{name = {\ttfamily \-None}, }
+\item[{}]{service\-\_\-type\-\_\-id = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1service_1_1_service_name_af0724210c74a6fb32131f9a563c351d0}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name_ad6a97ec39aac298de9630615cc7a6c07}{\index{cyberweb\-::model\-::service\-::\-Service\-Name@{cyberweb\-::model\-::service\-::\-Service\-Name}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::service::ServiceName@{cyberweb\-::model\-::service\-::\-Service\-Name}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-service.\-Service\-Name.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1service_1_1_service_name_ad6a97ec39aac298de9630615cc7a6c07}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name_a7545657c6a34f1c11ca622d8363a5ab3}{\index{cyberweb\-::model\-::service\-::\-Service\-Name@{cyberweb\-::model\-::service\-::\-Service\-Name}!id@{id}}
+\index{id@{id}!cyberweb::model::service::ServiceName@{cyberweb\-::model\-::service\-::\-Service\-Name}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::service.\-Service\-Name\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1service_1_1_service_name_a7545657c6a34f1c11ca622d8363a5ab3}
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name_a17f4f8b445a6a8e4052ceaadbdee0f1e}{\index{cyberweb\-::model\-::service\-::\-Service\-Name@{cyberweb\-::model\-::service\-::\-Service\-Name}!name@{name}}
+\index{name@{name}!cyberweb::model::service::ServiceName@{cyberweb\-::model\-::service\-::\-Service\-Name}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::service.\-Service\-Name\-::name} = \-Column(\-String(25))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1service_1_1_service_name_a17f4f8b445a6a8e4052ceaadbdee0f1e}
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name_a37001950fc1fb2f526cc1e84ba813f56}{\index{cyberweb\-::model\-::service\-::\-Service\-Name@{cyberweb\-::model\-::service\-::\-Service\-Name}!name@{name}}
+\index{name@{name}!cyberweb::model::service::ServiceName@{cyberweb\-::model\-::service\-::\-Service\-Name}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::service.\-Service\-Name\-::name}}}\label{classcyberweb_1_1model_1_1service_1_1_service_name_a37001950fc1fb2f526cc1e84ba813f56}
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name_aea507569f975bb2acec79eb5ec138f0a}{\index{cyberweb\-::model\-::service\-::\-Service\-Name@{cyberweb\-::model\-::service\-::\-Service\-Name}!service\-\_\-type@{service\-\_\-type}}
+\index{service\-\_\-type@{service\-\_\-type}!cyberweb::model::service::ServiceName@{cyberweb\-::model\-::service\-::\-Service\-Name}}
+\subsubsection[{service\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::service.\-Service\-Name\-::service\-\_\-type} = relation('{\bf \-Service\-Type}')\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1service_1_1_service_name_aea507569f975bb2acec79eb5ec138f0a}
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name_aed285922f6a023c535aefd7ecdf1d32e}{\index{cyberweb\-::model\-::service\-::\-Service\-Name@{cyberweb\-::model\-::service\-::\-Service\-Name}!service\-\_\-type\-\_\-id@{service\-\_\-type\-\_\-id}}
+\index{service\-\_\-type\-\_\-id@{service\-\_\-type\-\_\-id}!cyberweb::model::service::ServiceName@{cyberweb\-::model\-::service\-::\-Service\-Name}}
+\subsubsection[{service\-\_\-type\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::service.\-Service\-Name\-::service\-\_\-type\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}servicetype.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1service_1_1_service_name_aed285922f6a023c535aefd7ecdf1d32e}
+\hypertarget{classcyberweb_1_1model_1_1service_1_1_service_name_aeb5b949fbc24621503feb9d3f9c58deb}{\index{cyberweb\-::model\-::service\-::\-Service\-Name@{cyberweb\-::model\-::service\-::\-Service\-Name}!servicetype\-\_\-id@{servicetype\-\_\-id}}
+\index{servicetype\-\_\-id@{servicetype\-\_\-id}!cyberweb::model::service::ServiceName@{cyberweb\-::model\-::service\-::\-Service\-Name}}
+\subsubsection[{servicetype\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::service.\-Service\-Name\-::servicetype\-\_\-id}}}\label{classcyberweb_1_1model_1_1service_1_1_service_name_aeb5b949fbc24621503feb9d3f9c58deb}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{model_2service_8py}{service.\-py}\end{DoxyCompactItemize}

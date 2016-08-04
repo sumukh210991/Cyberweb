@@ -1,0 +1,5 @@
+*.mako.py
+cwproj/
+.*.swp
+.nfs*
+*.pyc

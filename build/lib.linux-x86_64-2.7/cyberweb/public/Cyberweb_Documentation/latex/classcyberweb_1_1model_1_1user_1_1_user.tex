@@ -1,0 +1,145 @@
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user}{\section{cyberweb.\-model.\-user.\-User \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1user_1_1_user}\index{cyberweb.\-model.\-user.\-User@{cyberweb.\-model.\-user.\-User}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_aa59fc686b7d8c698cd5ea47221391032}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_af9d76d0d87720469605b548a3c3cdf1f}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_user_ae492fbd22a356b85dc04d32c907e76e6}{username}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_user_af9562ca812f1b421e4bde123a26096fb}{password}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_user_aa1dc0467585853fa7adaf5c54831ec7d}{email}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_user_ade12e3b83ba5a9679c6720628dd4d656}{firstname}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_user_aab1bcb2dff1942efcf340bc87cc2adba}{lastname}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a84deb8765000e97cd30e335870165da5}{institution}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a3d58ee4ec0da74ce772a3c83989d1ec3}{created}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_ab204ad563a4069d43a98083399508934}{id} = \-Column(\-Integer, primary\-\_\-key=\-True, autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a622a0b8371f0f5ac334b8a485818540f}{username} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_ae3536eefd4acd7d3973cb98cbaf35184}{password} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a81bef5db8920f8f8b0449fe95c3835b7}{firstname} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_ae60d91304ee84117a23ba9869561fdf4}{lastname} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a1125690b551d91248947ec992b7857f6}{email} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a6078404e7083920ae68d45ebe7d2b5be}{institution} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_aa440dcb0314bf064641a5118c4f79b5d}{last\-\_\-login\-\_\-date} = \-Column(\-Date\-Time())
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a3e4adcf41f726094914bb1bca94e254f}{last\-\_\-login\-\_\-ip} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a8a64500997eb63538d09793237c6a3db}{created} = \-Column(\-Date\-Time())
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_a6e8101f9904d43468d411698701b4465}{verified} = \-Column(\-Boolean())
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_aa59fc686b7d8c698cd5ea47221391032}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-user.\-User.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{username = {\ttfamily \-None}, }
+\item[{}]{password = {\ttfamily \-None}, }
+\item[{}]{email = {\ttfamily \-None}, }
+\item[{}]{firstname = {\ttfamily \-None}, }
+\item[{}]{lastname = {\ttfamily \-None}, }
+\item[{}]{institution = {\ttfamily \-None}, }
+\item[{}]{created = {\ttfamily datetime.now()}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1user_1_1_user_aa59fc686b7d8c698cd5ea47221391032}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_af9d76d0d87720469605b548a3c3cdf1f}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-user.\-User.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1user_1_1_user_af9d76d0d87720469605b548a3c3cdf1f}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a8a64500997eb63538d09793237c6a3db}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!created@{created}}
+\index{created@{created}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{created}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::created} = \-Column(\-Date\-Time())\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a8a64500997eb63538d09793237c6a3db}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a3d58ee4ec0da74ce772a3c83989d1ec3}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!created@{created}}
+\index{created@{created}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{created}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-User\-::created}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a3d58ee4ec0da74ce772a3c83989d1ec3}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a1125690b551d91248947ec992b7857f6}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!email@{email}}
+\index{email@{email}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{email}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::email} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a1125690b551d91248947ec992b7857f6}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_aa1dc0467585853fa7adaf5c54831ec7d}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!email@{email}}
+\index{email@{email}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{email}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-User\-::email}}}\label{classcyberweb_1_1model_1_1user_1_1_user_aa1dc0467585853fa7adaf5c54831ec7d}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a81bef5db8920f8f8b0449fe95c3835b7}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!firstname@{firstname}}
+\index{firstname@{firstname}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{firstname}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::firstname} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a81bef5db8920f8f8b0449fe95c3835b7}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_ade12e3b83ba5a9679c6720628dd4d656}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!firstname@{firstname}}
+\index{firstname@{firstname}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{firstname}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-User\-::firstname}}}\label{classcyberweb_1_1model_1_1user_1_1_user_ade12e3b83ba5a9679c6720628dd4d656}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_ab204ad563a4069d43a98083399508934}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!id@{id}}
+\index{id@{id}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::id} = \-Column(\-Integer, primary\-\_\-key=\-True, autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_ab204ad563a4069d43a98083399508934}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a6078404e7083920ae68d45ebe7d2b5be}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!institution@{institution}}
+\index{institution@{institution}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{institution}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::institution} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a6078404e7083920ae68d45ebe7d2b5be}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a84deb8765000e97cd30e335870165da5}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!institution@{institution}}
+\index{institution@{institution}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{institution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-User\-::institution}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a84deb8765000e97cd30e335870165da5}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_aa440dcb0314bf064641a5118c4f79b5d}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!last\-\_\-login\-\_\-date@{last\-\_\-login\-\_\-date}}
+\index{last\-\_\-login\-\_\-date@{last\-\_\-login\-\_\-date}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{last\-\_\-login\-\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::last\-\_\-login\-\_\-date} = \-Column(\-Date\-Time())\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_aa440dcb0314bf064641a5118c4f79b5d}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a3e4adcf41f726094914bb1bca94e254f}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!last\-\_\-login\-\_\-ip@{last\-\_\-login\-\_\-ip}}
+\index{last\-\_\-login\-\_\-ip@{last\-\_\-login\-\_\-ip}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{last\-\_\-login\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::last\-\_\-login\-\_\-ip} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a3e4adcf41f726094914bb1bca94e254f}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_ae60d91304ee84117a23ba9869561fdf4}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!lastname@{lastname}}
+\index{lastname@{lastname}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{lastname}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::lastname} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_ae60d91304ee84117a23ba9869561fdf4}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_aab1bcb2dff1942efcf340bc87cc2adba}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!lastname@{lastname}}
+\index{lastname@{lastname}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{lastname}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-User\-::lastname}}}\label{classcyberweb_1_1model_1_1user_1_1_user_aab1bcb2dff1942efcf340bc87cc2adba}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_ae3536eefd4acd7d3973cb98cbaf35184}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!password@{password}}
+\index{password@{password}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{password}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::password} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_ae3536eefd4acd7d3973cb98cbaf35184}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_af9562ca812f1b421e4bde123a26096fb}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!password@{password}}
+\index{password@{password}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{password}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-User\-::password}}}\label{classcyberweb_1_1model_1_1user_1_1_user_af9562ca812f1b421e4bde123a26096fb}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a622a0b8371f0f5ac334b8a485818540f}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!username@{username}}
+\index{username@{username}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{username}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::username} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a622a0b8371f0f5ac334b8a485818540f}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_ae492fbd22a356b85dc04d32c907e76e6}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!username@{username}}
+\index{username@{username}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{username}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::user.\-User\-::username}}}\label{classcyberweb_1_1model_1_1user_1_1_user_ae492fbd22a356b85dc04d32c907e76e6}
+\hypertarget{classcyberweb_1_1model_1_1user_1_1_user_a6e8101f9904d43468d411698701b4465}{\index{cyberweb\-::model\-::user\-::\-User@{cyberweb\-::model\-::user\-::\-User}!verified@{verified}}
+\index{verified@{verified}!cyberweb::model::user::User@{cyberweb\-::model\-::user\-::\-User}}
+\subsubsection[{verified}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::user.\-User\-::verified} = \-Column(\-Boolean())\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1user_1_1_user_a6e8101f9904d43468d411698701b4465}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{model_2user_8py}{user.\-py}\end{DoxyCompactItemize}

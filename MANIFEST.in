@@ -1,0 +1,3 @@
+include cyberweb/config/deployment.ini_tmpl
+recursive-include cyberweb/public *
+recursive-include cyberweb/templates *

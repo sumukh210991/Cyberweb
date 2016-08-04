@@ -1,0 +1,174 @@
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job}{\section{cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job \-Class \-Reference}
+\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job}\index{cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job@{cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ae9f60c5bee042ba78f8a0304c593c0c1}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab06f66438b35367f97e1023e609e6c9b}{add\-Task}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_aacb1bc9e22235f3b37be77e25542aea1}{list\-Tasks}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab434ed08ee3adb6feb72ab1a568ab260}{count\-Tasks}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_aa913f7114de1f626fbfb9d3e9df97696}{get\-Task}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a227daad7ce304e89a7fcb10f4fd98f39}{start}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_af3d6c107a518d37df8c7bf5dead6cd50}{error}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a33d9f7f9563ffbb59274da91d4883d47}{queued}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab33ae8ddb3d5722fcc394955a8cdd5ed}{finished}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a29c74f228456e0bfc23a8154ae25c621}{state}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a916a38aa8c389b6459419e3a912825a5}{id}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab3522fd5cc5ea768a71ea4ff96644c0e}{name}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a7bcee0dd604c3fe4119912d8ca78a1b6}{owner\-\_\-id}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_adb45e0a8b71eaf0c798bebd63b2b82bf}{service}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab27533acd9790ed386c7052b4a0ac88b}{jobdir}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}
+The Jodis Job represents a group of jobs. The underlying jobs (or tasks) can be associated
+with a queue or running job, but this layer simply aggregates the group and bundles
+the tasks that you might use to operate on the lower level.
+\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ae9f60c5bee042ba78f8a0304c593c0c1}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{service\-\_\-id, }
+\item[{}]{owner\-\_\-id, }
+\item[{}]{jobname = {\ttfamily \-None}, }
+\item[{}]{working\-\_\-dir = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ae9f60c5bee042ba78f8a0304c593c0c1}
+\begin{DoxyVerb}
+The init function create a unique job name if it is not provided.
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab06f66438b35367f97e1023e609e6c9b}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!add\-Task@{add\-Task}}
+\index{add\-Task@{add\-Task}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{add\-Task}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-add\-Task} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{submitfile = {\ttfamily ''}, }
+\item[{}]{taskname = {\ttfamily \-None}, }
+\item[{}]{queuename = {\ttfamily ''}, }
+\item[{}]{queueservice\-\_\-id = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab06f66438b35367f97e1023e609e6c9b}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab434ed08ee3adb6feb72ab1a568ab260}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!count\-Tasks@{count\-Tasks}}
+\index{count\-Tasks@{count\-Tasks}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{count\-Tasks}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-count\-Tasks} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab434ed08ee3adb6feb72ab1a568ab260}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_af3d6c107a518d37df8c7bf5dead6cd50}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!error@{error}}
+\index{error@{error}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-error} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_af3d6c107a518d37df8c7bf5dead6cd50}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab33ae8ddb3d5722fcc394955a8cdd5ed}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!finished@{finished}}
+\index{finished@{finished}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{finished}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-finished} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab33ae8ddb3d5722fcc394955a8cdd5ed}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_aa913f7114de1f626fbfb9d3e9df97696}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!get\-Task@{get\-Task}}
+\index{get\-Task@{get\-Task}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{get\-Task}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-get\-Task} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{task\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_aa913f7114de1f626fbfb9d3e9df97696}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a916a38aa8c389b6459419e3a912825a5}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!id@{id}}
+\index{id@{id}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-id} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a916a38aa8c389b6459419e3a912825a5}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_aacb1bc9e22235f3b37be77e25542aea1}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!list\-Tasks@{list\-Tasks}}
+\index{list\-Tasks@{list\-Tasks}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{list\-Tasks}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-list\-Tasks} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_aacb1bc9e22235f3b37be77e25542aea1}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab3522fd5cc5ea768a71ea4ff96644c0e}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!name@{name}}
+\index{name@{name}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-name} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab3522fd5cc5ea768a71ea4ff96644c0e}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a7bcee0dd604c3fe4119912d8ca78a1b6}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!owner\-\_\-id@{owner\-\_\-id}}
+\index{owner\-\_\-id@{owner\-\_\-id}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{owner\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-owner\-\_\-id} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a7bcee0dd604c3fe4119912d8ca78a1b6}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a33d9f7f9563ffbb59274da91d4883d47}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!queued@{queued}}
+\index{queued@{queued}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{queued}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-queued} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a33d9f7f9563ffbb59274da91d4883d47}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_adb45e0a8b71eaf0c798bebd63b2b82bf}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!service@{service}}
+\index{service@{service}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{service}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-service} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_adb45e0a8b71eaf0c798bebd63b2b82bf}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a227daad7ce304e89a7fcb10f4fd98f39}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!start@{start}}
+\index{start@{start}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-start} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a227daad7ce304e89a7fcb10f4fd98f39}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a29c74f228456e0bfc23a8154ae25c621}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!state@{state}}
+\index{state@{state}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-base.\-Jodis\-Job.\-state} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_a29c74f228456e0bfc23a8154ae25c621}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab27533acd9790ed386c7052b4a0ac88b}{\index{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}!jobdir@{jobdir}}
+\index{jobdir@{jobdir}!cyberweb::lib::jodis::base::JodisJob@{cyberweb\-::lib\-::jodis\-::base\-::\-Jodis\-Job}}
+\subsubsection[{jobdir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::base.\-Jodis\-Job\-::jobdir}}}\label{classcyberweb_1_1lib_1_1jodis_1_1base_1_1_jodis_job_ab27533acd9790ed386c7052b4a0ac88b}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/lib/jodis/\hyperlink{jodis_2base_8py}{base.\-py}\end{DoxyCompactItemize}

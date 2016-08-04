@@ -1,0 +1,95 @@
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system}{\section{cyberweb.\-model.\-queue.\-Queue\-System \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1queue_1_1_queue_system}\index{cyberweb.\-model.\-queue.\-Queue\-System@{cyberweb.\-model.\-queue.\-Queue\-System}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_ab2090ab14ddb1b5f22ade3d43eec07c4}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_afb138c3a7b097a11930d6251376c0d91}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_adae76655e755e023898883754c0ccbe1}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_aa9816b5d0dbcb8f7df2873e3e3c66636}{name} = \-Column(\-String(25))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_ac2bd5fbdb30147bd7b26eaf4182046cd}{queuetype\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}queuetype.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_a8a8b1467e4751dd9f255a0da6e9f06e3}{path} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_a1201392160b3a4b9e7d895389174a01e}{submit} = \-Column(\-String(25))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_a8e4afc9acb151ecfc98a40899c8e64db}{delete} = \-Column(\-String(25))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_a03a12c5b446e1b4914591772bf0442a7}{status} = \-Column(\-String(25))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_a6014b2de013484a50c8fb3b5dd8580ca}{other1} = \-Column(\-String(25))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_a6759054cfd880d4fb01b12086d53633a}{other2} = \-Column(\-String(25))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system_aa5cdabc73ac8263a80a5cfc4e6255044}{queuetype} = relation(\hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_type}{\-Queue\-Type})
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_ab2090ab14ddb1b5f22ade3d43eec07c4}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-queue.\-Queue\-System.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_ab2090ab14ddb1b5f22ade3d43eec07c4}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_afb138c3a7b097a11930d6251376c0d91}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-queue.\-Queue\-System.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_afb138c3a7b097a11930d6251376c0d91}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_a8e4afc9acb151ecfc98a40899c8e64db}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!delete@{delete}}
+\index{delete@{delete}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::delete} = \-Column(\-String(25))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_a8e4afc9acb151ecfc98a40899c8e64db}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_adae76655e755e023898883754c0ccbe1}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!id@{id}}
+\index{id@{id}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_adae76655e755e023898883754c0ccbe1}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_aa9816b5d0dbcb8f7df2873e3e3c66636}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!name@{name}}
+\index{name@{name}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::name} = \-Column(\-String(25))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_aa9816b5d0dbcb8f7df2873e3e3c66636}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_a6014b2de013484a50c8fb3b5dd8580ca}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!other1@{other1}}
+\index{other1@{other1}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{other1}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::other1} = \-Column(\-String(25))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_a6014b2de013484a50c8fb3b5dd8580ca}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_a6759054cfd880d4fb01b12086d53633a}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!other2@{other2}}
+\index{other2@{other2}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{other2}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::other2} = \-Column(\-String(25))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_a6759054cfd880d4fb01b12086d53633a}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_a8a8b1467e4751dd9f255a0da6e9f06e3}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!path@{path}}
+\index{path@{path}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::path} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_a8a8b1467e4751dd9f255a0da6e9f06e3}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_aa5cdabc73ac8263a80a5cfc4e6255044}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!queuetype@{queuetype}}
+\index{queuetype@{queuetype}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{queuetype}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::queuetype} = relation({\bf \-Queue\-Type})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_aa5cdabc73ac8263a80a5cfc4e6255044}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_ac2bd5fbdb30147bd7b26eaf4182046cd}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!queuetype\-\_\-id@{queuetype\-\_\-id}}
+\index{queuetype\-\_\-id@{queuetype\-\_\-id}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{queuetype\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::queuetype\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}queuetype.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_ac2bd5fbdb30147bd7b26eaf4182046cd}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_a03a12c5b446e1b4914591772bf0442a7}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!status@{status}}
+\index{status@{status}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::status} = \-Column(\-String(25))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_a03a12c5b446e1b4914591772bf0442a7}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_system_a1201392160b3a4b9e7d895389174a01e}{\index{cyberweb\-::model\-::queue\-::\-Queue\-System@{cyberweb\-::model\-::queue\-::\-Queue\-System}!submit@{submit}}
+\index{submit@{submit}!cyberweb::model::queue::QueueSystem@{cyberweb\-::model\-::queue\-::\-Queue\-System}}
+\subsubsection[{submit}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-System\-::submit} = \-Column(\-String(25))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_system_a1201392160b3a4b9e7d895389174a01e}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{queue_8py}{queue.\-py}\end{DoxyCompactItemize}

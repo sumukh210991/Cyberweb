@@ -1,0 +1,98 @@
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key}{\section{cyberweb.\-model.\-resource.\-Auth\-Key \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1resource_1_1_auth_key}\index{cyberweb.\-model.\-resource.\-Auth\-Key@{cyberweb.\-model.\-resource.\-Auth\-Key}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_aec5e4370fc9bc64ed980581db28d2f0b}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_a6928fc5e8f8b518f9bd88fb4cb805ddc}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_adb5a4b483fa44389c1fe9d5828815a3a}{private\-\_\-key}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_a073b8f6b5a76026f841cdf898a418e76}{public\-\_\-key}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_a22d5c7c5fa7d683ebd15e193e5be1ec4}{user\-\_\-id}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_a5972771c45a25eef871b81504cec76b9}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_a8356da032afe905866a1fb1afd466625}{user\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}user.\-id\char`\"{}),nullable=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_a8a2801ef2d80d6e27f9989c407ed845e}{private\-\_\-key} = \-Column(\-String(200))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_a05efaacc2d0ced8d1dea25b97aa8fad7}{public\-\_\-key} = \-Column(\-String(200))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_afe01d6b47e9f6aa78019e308521520a0}{user} = relation('\hyperlink{classcyberweb_1_1model_1_1user_1_1_user}{\-User}',backref=backref('keys', order\-\_\-by=\hyperlink{classcyberweb_1_1model_1_1resource_1_1_auth_key_a5972771c45a25eef871b81504cec76b9}{id}))
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}
+Stores the path of the private and public keys for authentication. Users may store either
+relative or absoluate paths.
+    \end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_aec5e4370fc9bc64ed980581db28d2f0b}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-resource.\-Auth\-Key.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{private\-\_\-key = {\ttfamily \-None}, }
+\item[{}]{public\-\_\-key = {\ttfamily \-None}, }
+\item[{}]{user\-\_\-id = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_aec5e4370fc9bc64ed980581db28d2f0b}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_a6928fc5e8f8b518f9bd88fb4cb805ddc}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-resource.\-Auth\-Key.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_a6928fc5e8f8b518f9bd88fb4cb805ddc}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_a5972771c45a25eef871b81504cec76b9}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!id@{id}}
+\index{id@{id}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Auth\-Key\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_a5972771c45a25eef871b81504cec76b9}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_a8a2801ef2d80d6e27f9989c407ed845e}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!private\-\_\-key@{private\-\_\-key}}
+\index{private\-\_\-key@{private\-\_\-key}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{private\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Auth\-Key\-::private\-\_\-key} = \-Column(\-String(200))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_a8a2801ef2d80d6e27f9989c407ed845e}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_adb5a4b483fa44389c1fe9d5828815a3a}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!private\-\_\-key@{private\-\_\-key}}
+\index{private\-\_\-key@{private\-\_\-key}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{private\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Auth\-Key\-::private\-\_\-key}}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_adb5a4b483fa44389c1fe9d5828815a3a}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_a05efaacc2d0ced8d1dea25b97aa8fad7}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!public\-\_\-key@{public\-\_\-key}}
+\index{public\-\_\-key@{public\-\_\-key}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{public\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Auth\-Key\-::public\-\_\-key} = \-Column(\-String(200))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_a05efaacc2d0ced8d1dea25b97aa8fad7}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_a073b8f6b5a76026f841cdf898a418e76}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!public\-\_\-key@{public\-\_\-key}}
+\index{public\-\_\-key@{public\-\_\-key}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{public\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Auth\-Key\-::public\-\_\-key}}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_a073b8f6b5a76026f841cdf898a418e76}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_afe01d6b47e9f6aa78019e308521520a0}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!user@{user}}
+\index{user@{user}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Auth\-Key\-::user} = relation('{\bf \-User}',backref=backref('keys', order\-\_\-by={\bf id}))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_afe01d6b47e9f6aa78019e308521520a0}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_a8356da032afe905866a1fb1afd466625}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!user\-\_\-id@{user\-\_\-id}}
+\index{user\-\_\-id@{user\-\_\-id}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Auth\-Key\-::user\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}user.\-id\char`\"{}),nullable=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_a8356da032afe905866a1fb1afd466625}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_auth_key_a22d5c7c5fa7d683ebd15e193e5be1ec4}{\index{cyberweb\-::model\-::resource\-::\-Auth\-Key@{cyberweb\-::model\-::resource\-::\-Auth\-Key}!user\-\_\-id@{user\-\_\-id}}
+\index{user\-\_\-id@{user\-\_\-id}!cyberweb::model::resource::AuthKey@{cyberweb\-::model\-::resource\-::\-Auth\-Key}}
+\subsubsection[{user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Auth\-Key\-::user\-\_\-id}}}\label{classcyberweb_1_1model_1_1resource_1_1_auth_key_a22d5c7c5fa7d683ebd15e193e5be1ec4}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{resource_8py}{resource.\-py}\end{DoxyCompactItemize}

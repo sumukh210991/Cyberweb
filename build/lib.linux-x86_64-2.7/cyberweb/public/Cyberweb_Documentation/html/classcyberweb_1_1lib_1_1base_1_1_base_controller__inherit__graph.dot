@@ -1,0 +1,43 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="cyberweb.lib.base.BaseController",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="WSGIController",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="cyberweb.controllers.admin.AdminController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1admin_1_1_admin_controller.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="cyberweb.controllers.auth.AuthController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1auth_1_1_auth_controller.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="cyberweb.controllers.data.DataController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1data_1_1_data_controller.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="cyberweb.controllers.demo.DemoController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1demo_1_1_demo_controller.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="cyberweb.controllers.error.ErrorController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1error_1_1_error_controller.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="cyberweb.controllers.exec.ExecController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1exec_1_1_exec_controller.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="cyberweb.controllers.fa_admin.AdminControllerBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1fa__admin_1_1_admin_controller_base.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="cyberweb.controllers.gcom.GcomController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1gcom_1_1_gcom_controller.html"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="cyberweb.controllers.gnugraphs.GnugraphsController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1gnugraphs_1_1_gnugraphs_controller.html"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="cyberweb.controllers.graphs.GraphsController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1graphs_1_1_graphs_controller.html"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="cyberweb.controllers.graphsubmenu.GraphsubmenuController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1graphsubmenu_1_1_graphsubmenu_controller.html"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="cyberweb.controllers.homepage.HomepageController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1homepage_1_1_homepage_controller.html"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="cyberweb.controllers.info.InfoController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1info_1_1_info_controller.html"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="cyberweb.controllers.newadmin.NewadminController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1newadmin_1_1_newadmin_controller.html"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="cyberweb.controllers.postjob.PostjobController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1postjob_1_1_postjob_controller.html"];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="cyberweb.controllers.proxy.ProxyController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1proxy_1_1_proxy_controller.html"];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="cyberweb.controllers.user.UserController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1user_1_1_user_controller.html"];
+}

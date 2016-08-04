@@ -1,0 +1,119 @@
+myresources:
+[
+    {
+        name: 'dolphin'
+        max: 10
+    }
+    {
+        name: 'anthill'
+        max: 50
+    }
+    {
+        name: 'tg-login.ncsa.teragrid.org'
+        max: 1
+    }
+    {
+        name: 'pipeline3.acel'
+        max: 0
+    }
+    {
+        name: 'longboard.acel'
+        max: 0
+    }
+#    {
+#        name: 'tg-login.frost.ncar.teragrid.org'
+#        max: 1
+#    }
+]
+
+resources:
+{
+    blackbox:
+    {
+        name: 'blackbox'
+        host: 'blackbox'
+        user: 'cheng'
+        type: 'condor'
+        bindir: ''
+        workingdir: '/home/cheng'
+        nodes: 56
+        params: {}
+        java1_6: '/usr/bin/java'
+    }
+    anthill:
+    {
+        name: 'anthill'
+        host: 'anthill'
+        user: 'mthomas'
+        type: 'sge'
+        bindir: ''
+        workingdir: '/home/mthomas'
+        nodes: 88
+        params: {}
+        java1_6: '/usr/java/jre1.6.0_11/bin/java'
+    }
+
+    'pipeline3.acel':
+    {
+        name: 'pipeline3'
+        host: 'pipeline3.acel'
+        user: 'mthomas'
+        type: 'sge'
+        bindir: ''
+        workingdir: '/home/mthomas'
+        nodes: 0
+    }
+
+    'longboard.acel':
+    {
+        name: 'longboard'
+        host: 'longboard.acel'
+        user: 'carny'
+        type: 'sge'
+        bindir: ''
+        workingdir: '/u06/cyberweb'
+        nodes: 0
+    }
+
+    dolphin:
+    {
+        name: 'dolphin'
+        host: 'dolphin'
+        user: 'mthomas'
+        type: 'pbs'
+        bindir: '/home/torque/bin/'
+        workingdir: '/home4/mthomas'
+        java1_6: 'jdk1.6.0_14/bin/java'
+        nodes: 88
+        params:
+        {
+            q: 'workq'
+        }
+    }
+
+    'tg-login.ncsa.teragrid.org':
+    {
+        name: 'ncsa'
+        host: 'tg-login.ncsa.teragrid.org'
+        user: ''
+        type: 'pbs'
+        bindir: ''
+        params:
+        {
+        }
+        java1_6: 'jdk1.6.0_14/bin/java'
+    }
+
+    'tg-login.frost.ncar.teragrid.org':
+    {
+        host: 'tg-login.frost.ncar.teragrid.org'
+        user: ''
+        type: 'pbs'
+        bindir: ''
+        params:
+        {
+            n: '1'
+            t: '60'
+        }
+    }
+}

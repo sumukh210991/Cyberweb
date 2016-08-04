@@ -1,0 +1,1120 @@
+/*
+* CyberWeb CSS Framework
+* Copyright (c) 2009 San Diego State University Advanced Computing Lab.
+*/
+/*Smita editing*/
+/* HTML helpers
+----------------------------------*/
+body{
+	font-family:"Gill Sans", "Trebuchet MS", FreeSans, Verdana, Arial, sans-serif;
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+	line-height:1.5em;
+	color:#333333;
+	min-width:931px;
+}
+
+h1{
+	font-family:"Trebuchet MS", FreeSans, Verdana, Arial, sans-serif;
+	margin:0px;
+	padding:0 0 0 5px;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+}
+
+h2{
+	margin:0px;
+	padding:0px;
+	color:#1a2c42;
+	font-size:16px;
+	font-weight:normal;
+}
+
+h3, h4{
+	font-family:"Trebuchet MS", FreeSans, Verdana, Arial, sans-serif;
+	margin: 0 0 0 5px;
+	padding:0px;
+	font-size:14px;
+	color:#345984;
+}
+
+img{
+	border:none;
+	height:17px;
+	width:17px;
+}
+
+b{
+    font-style:normal;
+    font-weight:normal;
+}
+
+ul {
+	margin:0px;
+	padding:0px;
+}
+
+a {color:#345984;outline:none;text-decoration:none }
+a:active { color:#6699CC }
+a:hover { color:#6699CC; text-decoration:underline }
+a:visited { color:#345984 }
+/*--------------------------------*/
+
+/* Modifier classes
+----------------------------------*/
+.clear { clear:both }
+
+.dark{
+	 color:#ff4d4d;
+	/* color:#003366; */
+	background:inherit;
+	font-weight: bold;
+}
+/*--------------------------------*/
+
+
+
+/* Navigation bar
+----------------------------------*/
+#navbar {
+	margin:0;
+	padding:0;
+	height:40px;
+	border:1px solid #625e00;
+	border-width:1px 0;
+	/* background: #B89D6D;*/
+	background: #009999;
+	min-width:891px;
+	}
+
+ul#tabs {
+	height:40px;
+	list-style:none outside;
+	text-align:center;
+	float:left;
+	}
+
+ul#rightTabs {
+	margin-right:20px;
+	list-style:none outside;
+	text-align:center;
+	float:right;
+	}
+
+#tabs li,#rightTabs li {
+	display:block;
+	font-size:11px;
+	line-height:40px;
+	color:#FFF;
+	float:left;
+	}
+
+#rightTabs li a {
+	width: 62px;
+	text-align:right;
+	height:40px;
+	display:block;
+	text-decoration:none;
+	color:#FFF;
+	}
+
+#tabs li a {
+	width: 87px;
+	text-align:center;
+	height:40px;
+	display:block;
+	text-decoration:none;
+	color:#FFF;
+	}
+
+#tabs li a:hover, #tabs li.current a, #rightTabs li a:hover {
+	color:#003319;
+	font-weight:bold;
+	}
+
+#subnav {
+	margin:0;
+	padding:0;
+	height:24px;
+	background:#666999;
+	min-width:891px;
+	}
+
+ul#subnavTabs {
+	margin:0;
+	padding:0;
+	height:24px;
+	list-style:none outside;
+	text-align:center;
+	}
+
+#subnavTabs li{
+	margin-left:7px;
+	margin-right:7px;
+	display:block;
+	font-size:11px;
+	color:#FFF;
+	float:left;
+	}
+
+#subnavTabs li a{
+	margin-left:7px;
+	margin-right:7px;
+	text-align:center;
+	display:block;
+	color:white;
+	}
+
+#subnavTabs li.current a{
+	color:blue;
+	text-decoration:none;
+	}
+
+#subnavTabs li a:hover{
+	color:blue;
+	text-decoration:none;
+	}
+
+#messagebar {
+	background:green;
+	margin:0 auto;
+	max-width:40%;
+	text-align:center;
+	}
+/*---------------------------------*/
+
+
+
+/* Column formatting
+----------------------------------*/
+#content {
+	min-width:875px;
+	width:98%;
+	margin:15px 10px 40px 10px;
+	text-align:left;
+	display:inline-table;
+	}
+
+.buttons {
+        float:left;
+}
+
+.button {
+    width:auto;
+}
+
+
+.col1-main{min-width:inherit;margin:0 auto; }
+
+.col2-main1{ min-width:450px;width:57%;float:left;margin-left:20px; }
+.col2-main2{ min-width:350px;width:38%;float:right;margin-right:20px; }
+
+.col3-main{	min-width:340px;width:52%;float:left;margin-left:20px; }
+.col3-side{	min-width:197px;width:20%; float:left;margin-left:20px; }
+
+.col2-main{min-width:500px;width:65%;float:left;margin-left:0px; }
+.col2-right{min-width:280px;width:30%;float:left;margin-left:0px; margin-right:40px; }
+.col2-left{min-width:100px;width:100px;float:left;margin-left:0px; }
+
+.leftnav{
+    width:100px;
+	text-align:left;
+	margin-left:1px;
+	margin-top:1px;
+	padding:0;
+	height:20px;
+	}
+/*---------------------------------*/
+
+#calendar {
+    position:relative;
+	margin: 40px 0 40px 0;
+}
+
+.resourcesandservices {
+	margin: 40px 5px 40px 5px;
+	width:200px;
+	float:left;
+}
+/* Gallery messages
+----------------------------------*/
+#newsandmessages {
+	width:380px;
+}
+table.d0 {
+        border: 0px;
+}
+tr.d0 td {
+        border: 0px;
+	background-color: #cccccc;
+}
+tr.d1 td {
+        border: 0px;
+	background-color: #ffffff;
+}
+mfd0 {
+	font-family:"Trebuchet MS", FreeSans, Verdana, Arial, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+}
+mf0 {
+	font-family:"Trebuchet MS", FreeSans, Verdana, Arial, sans-serif;
+	font-size:10px;
+}
+mfd1 {
+	font-family:"Trebuchet MS", FreeSans, Verdana, Arial, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+}
+mf1 {
+	font-family:"Trebuchet MS", FreeSans, Verdana, Arial, sans-serif;
+	font-size:10px;
+}
+.date {
+	font-weight:bold;
+	margin-bottom:5px;
+}
+.message {
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+.sendMessageBox {
+	width:100%;
+}
+.html-text-box {
+	margin:10px auto 10px;
+	width:400px;
+	height:40px;
+	font-size: 14px;
+}
+/*---------------------------------*/
+
+/* Gallery slideshow
+----------------------------------*/
+#gallery {
+    position:relative;
+    height:350px;
+}
+
+#gallery a {
+	position:absolute;
+}
+
+#gallery a img {
+	border:solid;
+	width:320px;
+	height:300px
+}
+
+#gallery a.show {
+	float:right;
+	z-index:500
+}
+
+#gallery .caption {
+	float:right;
+	z-index:600;
+	height:50px;
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+
+#gallery .caption .content {
+	margin:5px
+}
+
+#gallery .caption .content h3 {
+	margin:0;
+	padding:0;
+	color:#1DCCEF;
+}
+/*---------------------------------*/
+
+
+/* Data Viwer - fits into the browser object
+----------------------------------*/
+#viz .image{
+	width:440px;
+	min-height:250px;
+	float:left;
+	border:solid;
+	margin: 0 auto 10px 10px;
+	padding-top:10px;
+}
+
+#viz .script{
+	width:440px;
+	min-height:200px;
+	margin: 0 auto 10px 10px;
+	padding-top:10px;
+	float:left;
+	border:solid;
+}
+
+#viz img{
+	width:440px;
+	height:250px;
+	margin: 0 auto;
+}
+/*---------------------------------*/
+
+#graph .image{
+	width:690px;
+	min-height:446px;
+	float:left;
+	border:solid;
+	margin: 0 auto 10px 10px;
+	padding-top:10px;
+}
+
+#graph .script{
+	width:690px;
+	min-height:200px;
+	margin: 0 auto 10px 10px;
+	padding-top:10px;
+	float:left;
+	border:solid;
+}
+
+#graph img{
+	width:690px;
+	height:250px;
+	margin: 0 auto;
+}
+
+#graph .images{
+    left: 100px;
+    margin: 0 auto 10px 225px;
+    min-height: 200px;
+    padding-top: 10px;
+    top: 180px;
+    width: 50%;
+}
+/*---------------------------------*/
+#graphbrowser{
+	margin: 5px 10px;
+    min-height: 657px;
+    width: 100%;
+}
+
+#graphbrowser .box-header{
+	margin-left:20px;
+	padding-top:10px;
+	}
+
+#graphbrowser .file-box{
+	width:320px;
+	height:400px;
+	margin: 0 auto 10px 10px;
+	padding-top:10px;
+	display: inline;
+    float: left;
+	border:solid;
+	}
+
+#graphbrowser .dataarea{
+	height: 320px;
+	border-top:solid;
+	overflow:auto;
+	overflow-y:auto;
+	overflow-x:hidden;
+	}
+
+#graphbrowser li {
+	margin:0;
+	width: 320px;
+	display:block;
+	font-size:11px;
+	}
+
+#graphbrowser li:hover {
+	border:solid 1px blue;
+	}
+	
+#graphbrowser .machine-browser{
+	width: 100%;
+	/*height:250px;*/
+	margin: 0 auto 10px 10px;
+	padding-top:10px;
+	float:left;
+	/*border:solid;*/
+	}
+	
+#graphbrowser .plot_options {
+    /*border: medium solid;*/
+    height: 300px;
+    margin: 0px auto 10px 10px;
+    /*float: left;*/
+    width: 900px;
+    position: absolute;
+	margin-left: 350px;
+}
+
+.options_table, .options_table tr, .options_table td {
+	border: none;
+	background: none repeat scroll 0 0 #138888;
+}
+
+.options_table tr td {
+	width: 160px;
+}
+
+#graphbrowser .plot_options input{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: black;
+    border: none;
+    color: white;
+}
+
+#analysis_types_div, #plot_type_div, #plane_views_div, #performance_div, #dataType_div, #plot_div, #contour_div, #vector_div,
+#velocity_div , #pressure_div , #density_div , #temperature_div,
+#contour_image_div , #contour_movie_div , #contour_sequence_div {
+    background: none repeat scroll 0 0 #138888;
+    /*border: 1px solid;*/
+    height: 60px;
+    top: 0;
+    width: 100%;
+    border: none;
+    
+}
+
+#plane_views_div{
+	width: 250px;
+	height: 160px;
+}
+
+#plot_type_div{
+	width: 170px;
+}
+
+#plot_types{
+	margin-left: 10%;
+}
+
+.plane_params, .plane_name{
+	display:inline;
+	width: 50%;
+}
+
+#views_table tr td{
+	/*border-right: 1px solid black;*/
+}
+
+.plane_params label{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#graphbrowser .plane_params input {
+	display:inline;
+	width: 35px;
+	margin: 0;
+	padding: 0;
+	margin-left: 2%;
+}
+
+#views_table, #views_table tr, #views_table tr td {
+	width: 400px;
+	margin: 0;
+	padding: 0;
+}
+#graph .job_summary{
+    background: none repeat scroll 0 0 #DDDDDD;
+    left: 300px;
+    margin: 0 auto 10px 10px;
+    min-height: 55px;
+    padding-top: 10px;
+    position: absolute;
+    top: 95px;
+    width: 50%;
+}
+
+#select_job_div {
+	border-top: 1px solid black;
+    height: 35px;
+    visibility:hidden;
+    display: none; 
+}
+
+#select_job_div input {
+	background-color: black;
+    color: #FFFFFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+#graphbrowser .header-text { float:left;width:35px;padding:0 0 5px 10px;text-align:right }
+
+
+.job_list
+{
+	min-height: 200px;
+	overflow-y:scroll;
+	margin-top: 50px;
+	overflow-x: hidden;
+}
+
+.job_list ul
+{
+	padding-left: 5%;
+	
+}
+
+#graphbrowser .job_list ul li
+{
+	font-size: 15px;
+}
+/* File Browser
+----------------------------------*/
+#browser{
+	width:912px;
+	min-height:557px;
+	margin:5px auto 10px;
+}
+
+#browser .box-header{
+	margin-left:20px;
+	padding-top:10px;
+	}
+
+#browser .file-box{
+	width:440px;
+	height:446px;
+	margin: 0 auto 10px 10px;
+	padding-top:10px;
+	float:left;
+	border:solid;
+	}
+
+
+
+#browser .dataarea{
+	height:370px;
+	border-top:solid;
+	overflow:auto;
+	overflow-y:auto;
+	overflow-x:hidden;
+	}
+
+#browser li {
+	margin:0;
+	width:456px;
+	display:block;
+	font-size:11px;
+	}
+
+#browser li:hover {
+	border:solid 1px blue;
+	}
+
+#progress{
+	width:800px;
+	margin:0 auto;
+	}
+
+#progress-box{
+	height:100px;
+	border:solid;
+	overflow:auto;
+	overflow-y:auto;
+	overflow-x:hidden;
+	}
+
+.header-input {	float:left;padding-left:15px;padding-bottom:5px }
+.header-icon { float:left;height:18px;width:18px;padding:0 0 5px 15px }
+.header-text { float:left;width:120px;padding:0 0 5px 10px;text-align:right }
+
+.filesprite { height:12px;width:12px }
+
+.alternate { background-color:#D3D3D3 }
+.detail-check { padding-left:10px;line-height:7px;width:7px;float:left }
+.detail-icon { padding-left:10px;height:15px;width:10px;float:left }
+.detail-name { min-width:182px;font-size:8pt;line-height:16px;padding-left:7px;float:left }
+.detail-modified { min-width:93px;font-size:8pt;line-height:16px;padding-left:3px;float:left }
+.detail-size { min-width:60px;font-size:8pt;line-height:16px;padding-left:3px;float:left }
+
+.progress-icon { padding-left:15px;width:10px;float:left }
+.progress-name { min-width:227px;font-size:8pt;line-height:16px;padding-left:7px;float:left }
+.progress-host { min-width:90px;font-size:8pt;line-height:16px;padding-left:3px;float:left }
+.progress-status { min-width:90px;font-size:8pt;line-height:16px;padding-left:3px;float:left }
+.progress-time { min-width:90px;font-size:8pt;line-height:16px;padding-left:3px;float:left }
+/*---------------------------------*/
+
+/* Progress Bar
+----------------------------------*/
+.admintable { float:left;border:solid }
+.row { float:left;border-right:solid;padding:0 3px 0 3px }
+/*---------------------------------*/
+
+/* Progress Bar
+----------------------------------*/
+.ui-progressbar {
+height:1em;
+text-align:left;
+}
+.ui-progressbar .ui-progressbar-value {
+height:100%;
+margin:-1px;
+}
+.ui-widget-overlay {
+height:100%;
+left:0;
+position:absolute;
+top:0;
+width:100%;
+}
+.ui-widget .ui-widget {
+font-size:1em;
+}
+.ui-widget-content {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#EEEEEE url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) repeat-x scroll 50% top;
+border:1px solid #DDDDDD;
+color:#333333;
+}
+.ui-widget-header {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#009999 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) repeat-x scroll 50% 50%;
+border:1px solid #E78F08;
+color:#FFFFFF;
+font-weight:bold;
+}
+.ui-corner-left {
+-moz-border-radius-bottomleft:4px;
+-moz-border-radius-topleft:4px;
+}
+.ui-corner-all {
+-moz-border-radius-bottomleft:4px;
+-moz-border-radius-bottomright:4px;
+-moz-border-radius-topleft:4px;
+-moz-border-radius-topright:4px;
+}
+/*---------------------------------*/
+
+/* Footer
+----------------------------------*/
+#footer {
+	border-top:1px solid;
+	margin:100px 10px 10px 10px;
+	padding: 5px 5px 9px 5px;
+	width:inherit;
+	position:relative;
+	font-size: 11px;
+	line-height:0.4em;
+}
+
+#footer .footer-left {
+	width:30%;
+	margin:7px 0 7px 10px;
+	float:left;
+	text-align:left;
+	line-height:1.5em;
+}
+
+#footer .footer-center {
+	width:30%;
+	margin:7px auto 7px;
+	text-align:center;
+}
+
+#footer .footer-right {
+	width:30%;
+	margin:7px 10px 7px 0;
+	float:right;
+	text-align:right;
+}
+
+#pager {
+    text-align: center;
+    margin-top: 0.5em;
+}
+#pager a, #pager .pager_curpage {
+    padding: 0 0.2em;
+    border:thin solid #114477;
+    background: #73A0C5;
+    color: white;
+}
+
+#pager a:hover, #pager .pager_curpage {
+    text-decoration:none;
+    background:white;
+    color:#114477;
+}
+
+.icon {
+    display:block;
+    height:0px;
+    padding-top:16px;
+    width:16px;
+    overflow:hidden;
+}
+
+input.icon {
+    border:none;
+    width:16px;
+    height:16px;
+    padding:0;
+    cursor:pointer;
+}
+
+.form_controls {
+    margin-left:155px;
+}
+
+#sidebar input {
+	border:1px solid #DDD;
+	border-bottom-color:#F5F5F5;
+	border-right-color:#F5F5F5;
+    width:100%;
+}
+
+#sidebar label {
+    height:auto;
+    margin-bottom:0;
+    width:auto;
+}
+
+.ui-icon-pencil {
+    background-image: url(./edit.png);
+}
+.ui-icon-circle-close {
+    border: 5px black solid;
+    background-color:red;
+    background-image: url(./delete.png) !important;
+}
+
+td input.ui-icon {
+    background-color:transparent;
+    border:0px;
+    width:16px;
+    height: 0px;
+    overflow:hidden;
+    padding-bottom:13px;
+    cursor:pointer;
+}
+
+
+td form { text-align:center;}
+
+.ui-widget-link {
+    cursor:pointer;
+    margin-right:0.3em;
+}
+
+a.ui-widget-link {
+    color:#777777;
+    font-family:Verdana;
+}
+
+.ui-widget-link input {
+    border:0px;
+    background:transparent;
+}
+
+.ui-widget-link, 
+.submit input,
+#sidebar .submit input {
+	background-color:#F9F9F9;
+	border:1px solid #F5F5F5;
+	border-left-color:#DDD;
+	border-top-color:#DDD;
+	cursor:pointer;
+	padding:0 21px;
+	text-transform:lowercase;
+	width:auto;
+}
+
+#sidebar form {
+    margin:0 0 1em 0;
+}
+
+.submit,
+#sidebar .submit {
+	text-align:right;
+}
+
+.radio {
+	margin-left:160px;
+}
+.radio label,
+.radio input {
+	background:none;
+	border:none;
+	display:inline;
+	float:none;
+	vertical-align:middle;
+	width:auto;
+}
+
+
+.radio div {
+	clear:none;
+	white-space:nowrap;
+}
+
+/*********
+ * Forms *
+ *********/
+.admin-flash,
+fieldset {
+	color:#777;
+	margin-top:15px;
+	padding:10px;
+}
+
+.admin-flash {
+    background:#EFEFEF;
+	margin-bottom:15px;
+    font-weight:bold;
+}
+
+.message,
+fieldset,
+input,
+button,
+fieldset textarea,
+fieldset select {
+	border:1px solid #F5F5F5;
+	border-left-color:#DDD;
+	border-top-color:#DDD;
+}
+
+legend {
+	color:#73A0C5;
+	font-weight:bold;
+	padding:5px 10px;
+}
+
+input,
+button,
+fieldset textarea,
+fieldset select {
+	color:#777;
+	font:90% Verdana;
+	padding:4px;
+}
+
+fieldset textarea {
+	width:430px;
+}
+
+option {
+	padding:0 10px 0 5px;
+}
+fieldset label,
+fieldset p.label {
+	color:#777;
+	text-align:right;
+	width:145px;
+}
+fieldset label {
+	float:left;
+	margin:5px 0;
+	margin-right:10px;
+}
+
+fieldset p {
+	margin:0;
+}
+fieldset div {
+	padding:5px 0;
+	position:relative;
+}
+fieldset div div {
+	margin:0;
+}
+fieldset p.label {
+	left:0;
+	position:absolute;
+}
+
+a,
+a:link {
+    color:#06C;
+    text-decoration:none;
+}
+a:visited {
+    color:#147;
+}
+a:hover,
+a:active {
+    color:#147;
+    text-decoration:underline;
+}
+
+#nav {
+    bottom:0;
+    position:absolute;
+    right:0;
+}
+
+#nav a {
+    background-color:#EFEFEF;
+    border:1px solid #666;
+    border-bottom:0;
+    color:#259;
+    font-size:1.2em;
+    font-weight:bold;
+    margin:0 .1em;
+    padding:.2em;
+    padding-bottom:0;
+    text-decoration:none;
+}
+
+#nav a:hover,
+#nav a.current {
+    background-color:#FFF;
+}
+
+
+#header h1,
+#header h1 a,
+#header h1 a:hover,
+#header h1 a:visited {
+    color:#FFF;
+    text-decoration:none;
+}
+
+h1#header {
+    color: white;
+    height: 1.5em;
+    padding: 0.3em 1em;
+}
+
+h1#header a {
+    color: white;
+}
+
+.breadcrumb { float:right; font-size: 0.7em;}
+
+
+#loading{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(186, 223, 249);
+	opacity: 0.4;
+	filter:alpha(opacity=40); 
+}
+
+.loading_img{
+	position: fixed; 
+	top: 50%; 
+	left: 50%;
+
+}
+
+#job_summary{
+	clear: both;
+	margin-bottom: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+	word-wrap: break-word;
+	padding-right: 10px;
+}
+
+#job_summary h4{
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+
+#job_summary img{
+	float: right;
+}
+
+#analysis_types_div h3, #performance_div h3, #contour_div h3, #vector_div h3,
+#velocity_div h3, #pressure_div h3, #density_div h3, #temperature_div h3, 
+#contour_image_div h3, #contour_movie_div h3, #contour_sequence_div h3{
+	padding: 5px;
+	text-align: center;
+	margin-top: 0px;
+	color: white;
+    font-weight: normal;
+}
+
+#analysis_types_div select, #performance_div select, #contour_div select, #vector_div select, 
+#velocity_div select, #pressure_div select, #density_div select, #temperature_div select,
+#contour_image_div select, #contour_movie_div select, #contour_sequence_div select{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 86%;
+}
+
+#options_table_tr1{
+	border: 1px solid black;
+}
+
+#options_table_tr1 td{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#plot_div{
+	height: 40px;
+    padding-top: 20px;
+}
+
+#plot_div input{
+	width: 70px;
+}
+
+#graphbrowser .header-input input.button{
+	background-color: black;
+	color: white;
+}
+
+#plot_filename, #job_selected{
+	font-weight: bold;
+	font-family: helvetica;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 3px;
+}
+
+#get_plot_form{
+	margin-bottom: 10px;
+}
+
+#graphbrowser #plot_table input{
+	display: inline;
+	background: none repeat scroll 0 0 transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+#graphbrowser #plot_table input.param_form_submit, #graphbrowser #plot_table input.param_form_submit{
+	background: black;
+	color: white;
+}
+#graphbrowser #plot_table input.param_form_submit{
+	margin-left: 10px;
+}
+
+#graphbrowser #plot_table label{
+	display: block;
+    width: 50px;
+}
+
+#movie_holder{
+	display: none;
+}

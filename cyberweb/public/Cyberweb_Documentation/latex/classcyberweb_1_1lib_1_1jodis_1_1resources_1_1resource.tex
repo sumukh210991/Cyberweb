@@ -1,0 +1,203 @@
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource}{\section{cyberweb.\-lib.\-jodis.\-resources.\-resource \-Class \-Reference}
+\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource}\index{cyberweb.\-lib.\-jodis.\-resources.\-resource@{cyberweb.\-lib.\-jodis.\-resources.\-resource}}
+}
+\-Inheritance diagram for cyberweb.\-lib.\-jodis.\-resources.\-resource\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.171548cm]{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ab2b3bf482f983a6d05296f764c92d88e}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_aa168c5ed9b9cf18f188432e71d0cc328}{\-\_\-\-\_\-del\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af9075927d9c183fb6cb8352957c374e0}{raw}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a8e4a2bdbfaf2233f3dcdd8477a4fbcde}{upload}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af5c15ff57444d05ae384da2dd44dd078}{upload\-App}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a96fe42e90c35ab6cf71ccaa032471632}{writefile}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a54d49f03e7cf0272217b93c04b11f402}{create\-Job\-String}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_aede5702fbb5a2119cbcee33a92b5196d}{create\-Job}
+\item 
+def \hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a244747d974d4f22680f8553f4d19d9b3}{create\-Param\-String}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a91984ff84e44ff0f42b7f4b472b87030}{host}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ad45e5547ad297102b42ad4eee31c56ce}{user}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af0e466576a8b4c7ab387e8a6e9d45501}{outputfile}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ab6bc4ccb41d4cec98ce14625c431de08}{config}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a7f775fd4cdb7822f070dad6d743b2991}{account}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a58971514822583bbb56a44599762caad}{app}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a947070b7a584afcd828dd3649714586f}{jobs}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a9a6a47f6f1e016f54c2cff4ea4bedba3}{ssh}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_acbd174ae742e2bdc0ff24eeaa69906a9}{appdir}
+\item 
+\hyperlink{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_abcc35cf30e32a6e030bafd742ace7b0f}{targetfile}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}
+The resource class represents a connection to a computational resource.
+\end{DoxyVerb}
+ 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ab2b3bf482f983a6d05296f764c92d88e}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{host, }
+\item[{}]{user, }
+\item[{}]{type = {\ttfamily \-None}, }
+\item[{}]{config = {\ttfamily \-None}, }
+\item[{}]{app = {\ttfamily \-None}, }
+\item[{}]{gsissh = {\ttfamily \-False}, }
+\item[{}]{keyfile = {\ttfamily \-None}, }
+\item[{}]{account = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ab2b3bf482f983a6d05296f764c92d88e}
+\begin{DoxyVerb}
+Parameters:
+    host - hostname string which to connect to
+    user - username
+    type - ?
+    config - dictionary of configuration options
+    app = ?
+    gsissh - boolean value of which authentication mechanism to use
+\end{DoxyVerb}
+ \hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_aa168c5ed9b9cf18f188432e71d0cc328}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!\-\_\-\-\_\-del\-\_\-\-\_\-@{\-\_\-\-\_\-del\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-del\-\_\-\-\_\-@{\-\_\-\-\_\-del\-\_\-\-\_\-}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{\-\_\-\-\_\-del\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-\_\-\-\_\-del\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_aa168c5ed9b9cf18f188432e71d0cc328}
+\begin{DoxyVerb}
+Disconnect on termination
+\end{DoxyVerb}
+ 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_aede5702fbb5a2119cbcee33a92b5196d}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!create\-Job@{create\-Job}}
+\index{create\-Job@{create\-Job}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{create\-Job}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-create\-Job} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{job\-Id, }
+\item[{}]{job\-Info = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_aede5702fbb5a2119cbcee33a92b5196d}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a54d49f03e7cf0272217b93c04b11f402}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!create\-Job\-String@{create\-Job\-String}}
+\index{create\-Job\-String@{create\-Job\-String}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{create\-Job\-String}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-create\-Job\-String} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{job\-Array = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a54d49f03e7cf0272217b93c04b11f402}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a244747d974d4f22680f8553f4d19d9b3}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!create\-Param\-String@{create\-Param\-String}}
+\index{create\-Param\-String@{create\-Param\-String}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{create\-Param\-String}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-create\-Param\-String} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{params}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a244747d974d4f22680f8553f4d19d9b3}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af9075927d9c183fb6cb8352957c374e0}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!raw@{raw}}
+\index{raw@{raw}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{raw}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-raw} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{args, }
+\item[{}]{kwargs}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af9075927d9c183fb6cb8352957c374e0}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a8e4a2bdbfaf2233f3dcdd8477a4fbcde}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!upload@{upload}}
+\index{upload@{upload}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{upload}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-upload} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{src\-Path, }
+\item[{}]{md5, }
+\item[{}]{target, }
+\item[{}]{src\-Host = {\ttfamily \-None}, }
+\item[{}]{src\-User = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a8e4a2bdbfaf2233f3dcdd8477a4fbcde}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af5c15ff57444d05ae384da2dd44dd078}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!upload\-App@{upload\-App}}
+\index{upload\-App@{upload\-App}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{upload\-App}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-upload\-App} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{src\-Path, }
+\item[{}]{md5, }
+\item[{}]{src\-Host = {\ttfamily \-None}, }
+\item[{}]{src\-User = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af5c15ff57444d05ae384da2dd44dd078}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a96fe42e90c35ab6cf71ccaa032471632}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!writefile@{writefile}}
+\index{writefile@{writefile}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{writefile}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-lib.\-jodis.\-resources.\-resource.\-writefile} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{file, }
+\item[{}]{input}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a96fe42e90c35ab6cf71ccaa032471632}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a7f775fd4cdb7822f070dad6d743b2991}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!account@{account}}
+\index{account@{account}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{account}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::account}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a7f775fd4cdb7822f070dad6d743b2991}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a58971514822583bbb56a44599762caad}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!app@{app}}
+\index{app@{app}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{app}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::app}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a58971514822583bbb56a44599762caad}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_acbd174ae742e2bdc0ff24eeaa69906a9}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!appdir@{appdir}}
+\index{appdir@{appdir}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{appdir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::appdir}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_acbd174ae742e2bdc0ff24eeaa69906a9}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ab6bc4ccb41d4cec98ce14625c431de08}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!config@{config}}
+\index{config@{config}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::config}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ab6bc4ccb41d4cec98ce14625c431de08}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a91984ff84e44ff0f42b7f4b472b87030}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!host@{host}}
+\index{host@{host}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{host}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::host}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a91984ff84e44ff0f42b7f4b472b87030}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a947070b7a584afcd828dd3649714586f}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!jobs@{jobs}}
+\index{jobs@{jobs}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{jobs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::jobs}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a947070b7a584afcd828dd3649714586f}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af0e466576a8b4c7ab387e8a6e9d45501}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!outputfile@{outputfile}}
+\index{outputfile@{outputfile}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{outputfile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::outputfile}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_af0e466576a8b4c7ab387e8a6e9d45501}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a9a6a47f6f1e016f54c2cff4ea4bedba3}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!ssh@{ssh}}
+\index{ssh@{ssh}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{ssh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::ssh}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_a9a6a47f6f1e016f54c2cff4ea4bedba3}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_abcc35cf30e32a6e030bafd742ace7b0f}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!targetfile@{targetfile}}
+\index{targetfile@{targetfile}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{targetfile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::targetfile}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_abcc35cf30e32a6e030bafd742ace7b0f}
+\hypertarget{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ad45e5547ad297102b42ad4eee31c56ce}{\index{cyberweb\-::lib\-::jodis\-::resources\-::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}!user@{user}}
+\index{user@{user}!cyberweb::lib::jodis::resources::resource@{cyberweb\-::lib\-::jodis\-::resources\-::resource}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::lib\-::jodis\-::resources.\-resource\-::user}}}\label{classcyberweb_1_1lib_1_1jodis_1_1resources_1_1resource_ad45e5547ad297102b42ad4eee31c56ce}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/lib/jodis/\hyperlink{resources_8py}{resources.\-py}\end{DoxyCompactItemize}

@@ -1,0 +1,273 @@
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task}{\section{cyberweb.\-model.\-job.\-Task \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1job_1_1_task}\index{cyberweb.\-model.\-job.\-Task@{cyberweb.\-model.\-job.\-Task}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a13c0d4c6f91427327503eb02d812172d}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a07ff52993f4242053340978daa8ea90c}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_aadb738d172831d17a859ecadab8a0bf3}{change\-\_\-state}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a3634117ea8658c134caaec58904e1e80}{job\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a1c7607e6c0ab5616d32d1985492905e2}{queueservice\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_aeaec264454577257e6e10ccc4d388949}{queue\-\_\-job\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_abe0c68ea4bebdc8b9a8615b21e7adc0e}{label}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_ac510505106386094268e1868255aba7d}{type}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a301599720f3fe6abf5790a32d8f2ba77}{name}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a02bb93cd29c61c24a99469d1379d7449}{version}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_ac822a5598f345e6b60cc5f4706cce478}{state}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a22390fcc5fb2948863c274b2b62db5dd}{owner}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a4ca0a71ff5d4de280feb1f127fab13dd}{environment}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a6b2bee4f07e3bd54f17d405471728be3}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_ad9067f2b58de1146917e80032dad7402}{job\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}job.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_ab734977585355fda9b7924f3bad051d2}{queue\-\_\-service\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}queueservice.\-id\char`\"{}))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a6e6d8dbd44be1c36d719a5406061db49}{queue\-\_\-job\-\_\-id} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a137722ad051da36d2d7458f556cd5eef}{label} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a21d8b0adec04876418c604c51ce82e90}{type} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a2f9f4113b25b7903c6f9ead7d3ce5375}{name} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_ab6303edd971d2cda66d12ab24a1f88ac}{version} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a880014f804417353c8f5ad3a0ff31175}{keyword} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a236e10d3584df4bbe475f3922ab7b5e9}{executable} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a2195bb12d1614492b53748800866fadd}{arguments} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a2fc29a74a5ceeb00c4c196ee44d1fc70}{stdin} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a634056f2e4b74a4541373de4be6e3f6f}{stdout} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a317b91a9d142dd5900dad3955dba4b4f}{stderr} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a9167d534f095d119a5d463085f89f4a8}{stdstatus} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_af1ccaa981c0cdb099f87f5b305b06247}{environment} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a405e4dcfc931e337b341fdaaa2cfd0d6}{state} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a64a2f4ce7f146ccba86a99f5a32c65e8}{owner} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}user.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_af098060cfd5ca4e6d73c325dc2680c8a}{requested\-\_\-cpu} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_ae7ee2403de38a5b0bceec5d1f54d404b}{actual\-\_\-cpu} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a088ff64f0ccdb1a7ce1e58e34d06cc88}{requested\-\_\-memory} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a6076c422220095af259ec7e5a0fd0bf8}{actual\-\_\-memory} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a5a4e64f343d52a75aebf834e64d3175f}{estimated\-\_\-walltime} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_abc34d3a69c5f6ce60b4f5e26bef52708}{requested\-\_\-walltime} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a7e0aae51b667bdd8a38fb898a089b0e8}{actual\-\_\-walltime} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_aed21bb8ae214e02e15b323e14780b334}{start\-\_\-time} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a8d26d9c39b4e3dc2466b795db41cad2d}{end\-\_\-time} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a3635e6f7099e0fa71f70d754566cbf59}{pending\-\_\-time} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_aaed5ef90962c942d583813b498d3a2c6}{running\-\_\-time} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a983a916f9543d7e188ab8754d243c7a6}{queue} = relation('\hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service}{\-Queue\-Service}')
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_task_a270b9b25e247a30f473c0149488c511a}{job} = relation('\hyperlink{classcyberweb_1_1model_1_1job_1_1_job}{\-Job}')
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a13c0d4c6f91427327503eb02d812172d}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-job.\-Task.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{job\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{owner = {\ttfamily \-None}, }
+\item[{}]{queueservice\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{queuejob\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{label = {\ttfamily \-None}, }
+\item[{}]{type = {\ttfamily \-None}, }
+\item[{}]{name = {\ttfamily \-None}, }
+\item[{}]{version = {\ttfamily \-None}, }
+\item[{}]{environment = {\ttfamily \-None}, }
+\item[{}]{state = {\ttfamily {\bf \-Job\-State.\-setup}}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1job_1_1_task_a13c0d4c6f91427327503eb02d812172d}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a07ff52993f4242053340978daa8ea90c}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-job.\-Task.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1job_1_1_task_a07ff52993f4242053340978daa8ea90c}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_aadb738d172831d17a859ecadab8a0bf3}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!change\-\_\-state@{change\-\_\-state}}
+\index{change\-\_\-state@{change\-\_\-state}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{change\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-job.\-Task.\-change\-\_\-state} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1job_1_1_task_aadb738d172831d17a859ecadab8a0bf3}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_ae7ee2403de38a5b0bceec5d1f54d404b}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!actual\-\_\-cpu@{actual\-\_\-cpu}}
+\index{actual\-\_\-cpu@{actual\-\_\-cpu}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{actual\-\_\-cpu}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::actual\-\_\-cpu} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_ae7ee2403de38a5b0bceec5d1f54d404b}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a6076c422220095af259ec7e5a0fd0bf8}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!actual\-\_\-memory@{actual\-\_\-memory}}
+\index{actual\-\_\-memory@{actual\-\_\-memory}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{actual\-\_\-memory}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::actual\-\_\-memory} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a6076c422220095af259ec7e5a0fd0bf8}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a7e0aae51b667bdd8a38fb898a089b0e8}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!actual\-\_\-walltime@{actual\-\_\-walltime}}
+\index{actual\-\_\-walltime@{actual\-\_\-walltime}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{actual\-\_\-walltime}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::actual\-\_\-walltime} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a7e0aae51b667bdd8a38fb898a089b0e8}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a2195bb12d1614492b53748800866fadd}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!arguments@{arguments}}
+\index{arguments@{arguments}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{arguments}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::arguments} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a2195bb12d1614492b53748800866fadd}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a8d26d9c39b4e3dc2466b795db41cad2d}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!end\-\_\-time@{end\-\_\-time}}
+\index{end\-\_\-time@{end\-\_\-time}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{end\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::end\-\_\-time} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a8d26d9c39b4e3dc2466b795db41cad2d}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_af1ccaa981c0cdb099f87f5b305b06247}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!environment@{environment}}
+\index{environment@{environment}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{environment}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::environment} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_af1ccaa981c0cdb099f87f5b305b06247}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a4ca0a71ff5d4de280feb1f127fab13dd}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!environment@{environment}}
+\index{environment@{environment}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{environment}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::environment}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a4ca0a71ff5d4de280feb1f127fab13dd}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a5a4e64f343d52a75aebf834e64d3175f}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!estimated\-\_\-walltime@{estimated\-\_\-walltime}}
+\index{estimated\-\_\-walltime@{estimated\-\_\-walltime}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{estimated\-\_\-walltime}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::estimated\-\_\-walltime} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a5a4e64f343d52a75aebf834e64d3175f}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a236e10d3584df4bbe475f3922ab7b5e9}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!executable@{executable}}
+\index{executable@{executable}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{executable}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::executable} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a236e10d3584df4bbe475f3922ab7b5e9}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a6b2bee4f07e3bd54f17d405471728be3}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!id@{id}}
+\index{id@{id}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a6b2bee4f07e3bd54f17d405471728be3}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a270b9b25e247a30f473c0149488c511a}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!job@{job}}
+\index{job@{job}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{job}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::job} = relation('{\bf \-Job}')\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a270b9b25e247a30f473c0149488c511a}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_ad9067f2b58de1146917e80032dad7402}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!job\-\_\-id@{job\-\_\-id}}
+\index{job\-\_\-id@{job\-\_\-id}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{job\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::job\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}job.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_ad9067f2b58de1146917e80032dad7402}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a3634117ea8658c134caaec58904e1e80}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!job\-\_\-id@{job\-\_\-id}}
+\index{job\-\_\-id@{job\-\_\-id}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{job\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::job\-\_\-id}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a3634117ea8658c134caaec58904e1e80}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a880014f804417353c8f5ad3a0ff31175}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!keyword@{keyword}}
+\index{keyword@{keyword}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{keyword}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::keyword} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a880014f804417353c8f5ad3a0ff31175}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a137722ad051da36d2d7458f556cd5eef}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!label@{label}}
+\index{label@{label}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::label} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a137722ad051da36d2d7458f556cd5eef}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_abe0c68ea4bebdc8b9a8615b21e7adc0e}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!label@{label}}
+\index{label@{label}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::label}}}\label{classcyberweb_1_1model_1_1job_1_1_task_abe0c68ea4bebdc8b9a8615b21e7adc0e}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a2f9f4113b25b7903c6f9ead7d3ce5375}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!name@{name}}
+\index{name@{name}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::name} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a2f9f4113b25b7903c6f9ead7d3ce5375}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a301599720f3fe6abf5790a32d8f2ba77}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!name@{name}}
+\index{name@{name}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::name}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a301599720f3fe6abf5790a32d8f2ba77}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a64a2f4ce7f146ccba86a99f5a32c65e8}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!owner@{owner}}
+\index{owner@{owner}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{owner}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::owner} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}user.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a64a2f4ce7f146ccba86a99f5a32c65e8}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a22390fcc5fb2948863c274b2b62db5dd}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!owner@{owner}}
+\index{owner@{owner}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{owner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::owner}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a22390fcc5fb2948863c274b2b62db5dd}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a3635e6f7099e0fa71f70d754566cbf59}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!pending\-\_\-time@{pending\-\_\-time}}
+\index{pending\-\_\-time@{pending\-\_\-time}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{pending\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::pending\-\_\-time} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a3635e6f7099e0fa71f70d754566cbf59}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a983a916f9543d7e188ab8754d243c7a6}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!queue@{queue}}
+\index{queue@{queue}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{queue}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::queue} = relation('{\bf \-Queue\-Service}')\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a983a916f9543d7e188ab8754d243c7a6}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a6e6d8dbd44be1c36d719a5406061db49}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!queue\-\_\-job\-\_\-id@{queue\-\_\-job\-\_\-id}}
+\index{queue\-\_\-job\-\_\-id@{queue\-\_\-job\-\_\-id}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{queue\-\_\-job\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::queue\-\_\-job\-\_\-id} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a6e6d8dbd44be1c36d719a5406061db49}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_aeaec264454577257e6e10ccc4d388949}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!queue\-\_\-job\-\_\-id@{queue\-\_\-job\-\_\-id}}
+\index{queue\-\_\-job\-\_\-id@{queue\-\_\-job\-\_\-id}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{queue\-\_\-job\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::queue\-\_\-job\-\_\-id}}}\label{classcyberweb_1_1model_1_1job_1_1_task_aeaec264454577257e6e10ccc4d388949}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_ab734977585355fda9b7924f3bad051d2}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!queue\-\_\-service\-\_\-id@{queue\-\_\-service\-\_\-id}}
+\index{queue\-\_\-service\-\_\-id@{queue\-\_\-service\-\_\-id}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{queue\-\_\-service\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::queue\-\_\-service\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}queueservice.\-id\char`\"{}))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_ab734977585355fda9b7924f3bad051d2}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a1c7607e6c0ab5616d32d1985492905e2}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!queueservice\-\_\-id@{queueservice\-\_\-id}}
+\index{queueservice\-\_\-id@{queueservice\-\_\-id}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{queueservice\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::queueservice\-\_\-id}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a1c7607e6c0ab5616d32d1985492905e2}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_af098060cfd5ca4e6d73c325dc2680c8a}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!requested\-\_\-cpu@{requested\-\_\-cpu}}
+\index{requested\-\_\-cpu@{requested\-\_\-cpu}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{requested\-\_\-cpu}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::requested\-\_\-cpu} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_af098060cfd5ca4e6d73c325dc2680c8a}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a088ff64f0ccdb1a7ce1e58e34d06cc88}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!requested\-\_\-memory@{requested\-\_\-memory}}
+\index{requested\-\_\-memory@{requested\-\_\-memory}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{requested\-\_\-memory}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::requested\-\_\-memory} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a088ff64f0ccdb1a7ce1e58e34d06cc88}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_abc34d3a69c5f6ce60b4f5e26bef52708}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!requested\-\_\-walltime@{requested\-\_\-walltime}}
+\index{requested\-\_\-walltime@{requested\-\_\-walltime}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{requested\-\_\-walltime}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::requested\-\_\-walltime} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_abc34d3a69c5f6ce60b4f5e26bef52708}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_aaed5ef90962c942d583813b498d3a2c6}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!running\-\_\-time@{running\-\_\-time}}
+\index{running\-\_\-time@{running\-\_\-time}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{running\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::running\-\_\-time} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_aaed5ef90962c942d583813b498d3a2c6}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_aed21bb8ae214e02e15b323e14780b334}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!start\-\_\-time@{start\-\_\-time}}
+\index{start\-\_\-time@{start\-\_\-time}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{start\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::start\-\_\-time} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_aed21bb8ae214e02e15b323e14780b334}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a405e4dcfc931e337b341fdaaa2cfd0d6}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!state@{state}}
+\index{state@{state}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::state} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a405e4dcfc931e337b341fdaaa2cfd0d6}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_ac822a5598f345e6b60cc5f4706cce478}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!state@{state}}
+\index{state@{state}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::state}}}\label{classcyberweb_1_1model_1_1job_1_1_task_ac822a5598f345e6b60cc5f4706cce478}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a317b91a9d142dd5900dad3955dba4b4f}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!stderr@{stderr}}
+\index{stderr@{stderr}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{stderr}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::stderr} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a317b91a9d142dd5900dad3955dba4b4f}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a2fc29a74a5ceeb00c4c196ee44d1fc70}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!stdin@{stdin}}
+\index{stdin@{stdin}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{stdin}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::stdin} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a2fc29a74a5ceeb00c4c196ee44d1fc70}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a634056f2e4b74a4541373de4be6e3f6f}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!stdout@{stdout}}
+\index{stdout@{stdout}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{stdout}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::stdout} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a634056f2e4b74a4541373de4be6e3f6f}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a9167d534f095d119a5d463085f89f4a8}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!stdstatus@{stdstatus}}
+\index{stdstatus@{stdstatus}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{stdstatus}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::stdstatus} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a9167d534f095d119a5d463085f89f4a8}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a21d8b0adec04876418c604c51ce82e90}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!type@{type}}
+\index{type@{type}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::type} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a21d8b0adec04876418c604c51ce82e90}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_ac510505106386094268e1868255aba7d}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!type@{type}}
+\index{type@{type}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::type}}}\label{classcyberweb_1_1model_1_1job_1_1_task_ac510505106386094268e1868255aba7d}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_ab6303edd971d2cda66d12ab24a1f88ac}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!version@{version}}
+\index{version@{version}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Task\-::version} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_task_ab6303edd971d2cda66d12ab24a1f88ac}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_task_a02bb93cd29c61c24a99469d1379d7449}{\index{cyberweb\-::model\-::job\-::\-Task@{cyberweb\-::model\-::job\-::\-Task}!version@{version}}
+\index{version@{version}!cyberweb::model::job::Task@{cyberweb\-::model\-::job\-::\-Task}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Task\-::version}}}\label{classcyberweb_1_1model_1_1job_1_1_task_a02bb93cd29c61c24a99469d1379d7449}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{job_8py}{job.\-py}\end{DoxyCompactItemize}

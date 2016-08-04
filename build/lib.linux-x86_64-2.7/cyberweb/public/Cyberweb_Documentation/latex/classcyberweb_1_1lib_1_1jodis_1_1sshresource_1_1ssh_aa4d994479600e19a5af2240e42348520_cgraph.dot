@@ -1,0 +1,9 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="cyberweb.lib.jodis.sshresource.ssh.connect",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="cyberweb.controllers.newadmin.NewadminController.user",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1controllers_1_1newadmin_1_1_newadmin_controller.html#afc9e40abb143c53fe42cefa526716f1c"];
+}

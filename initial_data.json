@@ -1,0 +1,249 @@
+[
+     { "model":"model.GroupDefinition", "fields": { "id":1, "name":"Superusers",
+              "description":"Users have root access."
+          }
+     },
+     { "model":"model.GroupDefinition", "fields": { "id":2, "name":"Administrators",
+              "description":"Users have admin access, but is restricted from other user data."
+          }
+     },
+     { "model":"model.GroupDefinition", "fields": { "id":3, "name":"CWUsers",
+              "description":"Users only have access to their data."
+          }
+     },
+     { "model":"model.GroupDefinition", "fields": { "id":4, "name":"Guests",
+              "description":"Users can view data but cannot modify data."
+          }
+     },
+     { "model":"model.GroupDefinition", "fields": { "id":5, "name":"UCOAM",
+              "description":"Administrators of the UCOAM CyberWeb project"
+          }
+     },
+     { "model":"model.GroupDefinition", "fields": { "id":6, "name":"UCOAM_admin",
+              "description":"The UCOAM CyberWeb project"
+          }
+     },
+     { "model":"model.GroupDefinition", "fields": { "id":7, "name":"UCOAM_dev",
+              "description":"Members of the UCOAM developer team"
+          }
+     },
+     { "model":"model.GroupDefinition", "fields": { "id":8, "name":"UCOAM_user",
+              "description":"Approved users of UCOAM"
+          }
+     },
+     { "model":"model.GroupDefinition", "fields": { "id":9, "name":"UCOAM_guest",
+              "description":"Guest visitors/viewers of UCOAM."
+          }
+     },
+
+     { "model":"model.User", "fields": {
+              "id":1, "username":"admin", "password":"9efdf1fa4245392299c1514f718beff8",
+              "firstname":"admin", "lastname":"admin", "email":"admin@somewhere.com", "institution":"cyberweb",
+              "verified":1
+          }
+     },
+     { "model":"model.User", "fields": {
+              "id":2, "username":"cyberweb", "password":"64bd3b2c7c81f2d607108cecd6ee9d0a",
+              "firstname":"cyberweb", "lastname":"cyberweb", "email":"cyberweb@somewhere.com", "institution":"cyberweb",
+              "verified":1
+          }
+     },
+     { "model":"model.User", "fields": {
+              "id":3, "username":"cwguest", "password":"066d4d255c9504fa4d93d5b1db5b3876",
+              "firstname":"cwguest", "lastname":"cwguest", "email":"cwguest@somewhere.com", "institution":"cyberweb",
+              "verified":1
+          }
+     },
+     { "model":"model.User", "fields": {
+              "id":5, "username":"mary", "password":"76cd98f4a4c263146fa4fcfc957fd9ec",
+              "firstname":"Mary", "lastname":"Thomas", "email":"mary@sciences.sdsu.edu", "institution":"SDSU",
+              "verified":1 }
+     },
+     { "model":"model.User", "fields": {
+              "id":6, "username":"carny", "password":"46b89dd19a4c3bc45339fc5f02f36aad",
+              "firstname":"Carny", "lastname":"Cheng", "email":"carny.cheng@gmail.com", "institution":"SDSU",
+              "verified":1
+          }
+     },
+     { "model":"model.User", "fields": {
+              "id":8, "username":"smita", "password":"46b89dd19a4c3bc45339fc5f02f36aad",
+              "firstname":"Smita", "lastname":"More", "email":"smits.smiling@gmail.com", "institution":"SDSU",
+              "verified":1
+          }
+     },
+     { "model":"model.User", "fields": {
+              "id":9, "username":"hetang", "password":"46b89dd19a4c3bc45339fc5f02f36aad",
+              "firstname":"Hetang", "lastname":"Shah", "email":"hetang.shah@gmail.com", "institution":"SDSU",
+              "verified":1
+          }
+     },
+
+     { "model":"model.Group", "fields": { "id":1, "group_definition_id":1, "user_id":1 } },
+     { "model":"model.Group", "fields": { "id":2, "group_definition_id":2, "user_id":4 } },
+     { "model":"model.Group", "fields": { "id":3, "group_definition_id":5, "user_id":4 } },
+     { "model":"model.Group", "fields": { "id":4, "group_definition_id":2, "user_id":5 } },
+     { "model":"model.Group", "fields": { "id":5, "group_definition_id":3, "user_id":5 } },
+     { "model":"model.Group", "fields": { "id":6, "group_definition_id":4, "user_id":5 } },
+     { "model":"model.Group", "fields": { "id":7, "group_definition_id":5, "user_id":5 } },
+     { "model":"model.Group", "fields": { "id":8, "group_definition_id":6, "user_id":5 } },
+     { "model":"model.Group", "fields": { "id":9, "group_definition_id":7, "user_id":5 } },
+     { "model":"model.Group", "fields": { "id":10, "group_definition_id":8, "user_id":5 } },
+     { "model":"model.Group", "fields": { "id":11, "group_definition_id":9, "user_id":5 } },
+     { "model":"model.Group", "fields": { "id":12, "group_definition_id":2, "user_id":6 } },
+     { "model":"model.Group", "fields": { "id":13, "group_definition_id":5, "user_id":7 } },
+     { "model":"model.Group", "fields": { "id":14, "group_definition_id":2, "user_id":8 } },
+     { "model":"model.Group", "fields": { "id":15, "group_definition_id":2, "user_id":9 } },
+
+
+     { "model":"model.MessageType", "fields": { "id":1, "name":"News and Messages", "description":"" } },
+     { "model":"model.MessageType", "fields": { "id":2, "name":"System Updates",    "description":"" } },
+     { "model":"model.MessageType", "fields": { "id":3, "name":"Alerts",            "description":"" } },
+     { "model":"model.MessageType", "fields": { "id":4, "name":"Events",            "description":"" } },
+     { "model":"model.MessageType", "fields": { "id":5, "name":"Notification",      "description":"" } },
+
+     { "model":"model.Protocol", "fields": { "id":1, "name":"http" } },
+     { "model":"model.Protocol", "fields": { "id":2, "nam4":"ftp" } },
+     { "model":"model.Protocol", "fields": { "id":3, "name":"ssh" } },
+     { "model":"model.Protocol", "fields": { "id":4, "name":"sftp" } },
+     { "model":"model.Protocol", "fields": { "id":5, "name":"gsissh" } },
+     { "model":"model.Protocol", "fields": { "id":6, "name":"gsiftp" } },
+     { "model":"model.Protocol", "fields": { "id":7, "name":"soap" } },
+
+     { "model":"model.ServiceType", "fields": { "id":1, "name":"Authentication" } },
+     { "model":"model.ServiceType", "fields": { "id":2, "name":"Job Execution" } },
+     { "model":"model.ServiceType", "fields": { "id":3, "name":"File Transfer" } },
+     { "model":"model.ServiceType", "fields": { "id":4, "name":"File Management" } },
+     { "model":"model.ServiceType", "fields": { "id":5, "name":"Visualization" } },
+     { "model":"model.ServiceType", "fields": { "id":30, "name":"BatchQueue" } },
+
+     { "model":"model.ServiceName", "fields": { "id":1, "name":"SSH", "service_type_id":1 } },
+     { "model":"model.ServiceName", "fields": { "id":2, "name":"SCP", "service_type_id":3 } },
+     { "model":"model.ServiceName", "fields": { "id":3, "name":"GSISSH", "service_type_id":1 } },
+     { "model":"model.ServiceName", "fields": { "id":4, "name":"GSISCP", "service_type_id":3 } },
+     { "model":"model.ServiceName", "fields": { "id":5, "name":"GRIDFTP", "service_type_id":3 } },
+     { "model":"model.ServiceName", "fields": { "id":6, "name":"FTP", "service_type_id":3 } },
+
+     { "model":"model.ServiceName", "fields": { "id":7, "name":"CONDOR", "service_type_id":2 } },
+     { "model":"model.ServiceName", "fields": { "id":8, "name":"GRAM", "service_type_id":1 } },
+     { "model":"model.ServiceName", "fields": { "id":12, "name":"SRB", "service_type_id":3 } },
+     { "model":"model.ServiceName", "fields": { "id":13, "name":"JODIS", "service_type_id":3 } },
+     { "model":"model.ServiceName", "fields": { "id":14, "name":"JODIS", "service_type_id":2 } },
+     { "model":"model.ServiceName", "fields": { "id":15, "name":"UCOAM", "service_type_id":6 } },
+     { "model":"model.ServiceName", "fields": { "id":16, "name":"iRODS", "service_type_id":3 } },
+
+     { "model":"model.ServiceName", "fields": { "id":30, "name":"LSF", "service_type_id":30 } },
+     { "model":"model.ServiceName", "fields": { "id":31, "name":"PBS", "service_type_id":30 } },
+     { "model":"model.ServiceName", "fields": { "id":32, "name":"TORQUE", "service_type_id":30 } },
+     { "model":"model.ServiceName", "fields": { "id":33, "name":"SGE", "service_type_id":30 } },
+     { "model":"model.ServiceName", "fields": { "id":34, "name":"Cobalt", "service_type_id":30 } },
+     { "model":"model.ServiceName", "fields": { "id":35, "name":"Condor", "service_type_id":31 } },
+
+     { "model":"model.Service", "fields": { "id":11, "protocol_id":3, "servicename_id":1, "resource_id":1, "command":"ssh", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":12, "protocol_id":3, "servicename_id":1, "resource_id":2, "command":"ssh", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":13, "protocol_id":3, "servicename_id":1, "resource_id":3, "command":"ssh", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":14, "protocol_id":3, "servicename_id":1, "resource_id":4, "command":"ssh", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":15, "protocol_id":3, "servicename_id":1, "resource_id":5, "command":"ssh", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":16, "protocol_id":5, "servicename_id":1, "resource_id":6, "command":"ssh", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":17, "protocol_id":5, "servicename_id":1, "resource_id":7, "command":"ssh", "path":"/usr/bin" } },
+
+     { "model":"model.Service", "fields": { "id":21, "protocol_id":3, "servicename_id":2, "resource_id":1, "command":"scp", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":22, "protocol_id":3, "servicename_id":2, "resource_id":2, "command":"scp", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":23, "protocol_id":3, "servicename_id":2, "resource_id":3, "command":"scp", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":24, "protocol_id":3, "servicename_id":2, "resource_id":4, "command":"scp", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":25, "protocol_id":3, "servicename_id":2, "resource_id":5, "command":"scp", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":26, "protocol_id":3, "servicename_id":2, "resource_id":6, "command":"scp", "path":"/usr/bin" } },
+     { "model":"model.Service", "fields": { "id":27, "protocol_id":3, "servicename_id":2, "resource_id":7, "command":"scp", "path":"/usr/bin" } },
+
+     { "model":"model.Service", "fields": { "id":30, "protocol_id":3, "servicename_id":3, "resource_id":4, "command":"gsissh", "path":"/usr/local/globus4.2.1/bin" } },
+     { "model":"model.Service", "fields": { "id":31, "protocol_id":3, "servicename_id":3, "resource_id":5, "command":"gsissh", "path":"/usr/local/globus4.2.1/bin" } },
+     { "model":"model.Service", "fields": { "id":32, "protocol_id":3, "servicename_id":3, "resource_id":6, "command":"gsissh", "path":"/usr/local/globus4.2.1/bin/" } },
+
+     { "model":"model.Service", "fields": { "id":40, "protocol_id":3, "servicename_id":3, "resource_id":4, "command":"gsiscp", "path":"/usr/local/globus4.2.1/bin" } },
+     { "model":"model.Service", "fields": { "id":41, "protocol_id":3, "servicename_id":3, "resource_id":5, "command":"gsiscp", "path":"/usr/local/globus4.2.1/bin" } },
+     { "model":"model.Service", "fields": { "id":42, "protocol_id":3, "servicename_id":3, "resource_id":6, "command":"gsiscp", "path":"/usr/local/globus4.2.1/bin/" } },
+
+
+     { "model":"model.Service", "fields": { "id":320, "protocol_id":3, "servicename_id":32, "resource_id":2, "command":"qsub", "path":"/home/torque/bin" } },
+     { "model":"model.Service", "fields": { "id":321, "protocol_id":3, "servicename_id":32, "resource_id":2, "command":"qstat", "path":"/home/torque/bin" } },
+     { "model":"model.Service", "fields": { "id":322, "protocol_id":3, "servicename_id":32, "resource_id":7, "command":"qsub", "path":"/home/torque/bin" } },
+     { "model":"model.Service", "fields": { "id":323, "protocol_id":3, "servicename_id":32, "resource_id":7, "command":"qstat", "path":"/home/torque/bin" } },
+
+     { "model":"model.Service", "fields": { "id":330, "protocol_id":3, "servicename_id":33, "resource_id":3, "command":"qsub", "path":"/opt/sge-6.2/binlx24-x86" } },
+     { "model":"model.Service", "fields": { "id":331, "protocol_id":3, "servicename_id":33, "resource_id":3, "command":"qstat", "path":"/opt/sge-6.2/binlx24-x86" } },
+     { "model":"model.Service", "fields": { "id":332, "protocol_id":3, "servicename_id":33, "resource_id":5, "command":"qsub", "path":"/opt/sge-6.2/binlx24-x86" } },
+     { "model":"model.Service", "fields": { "id":333, "protocol_id":3, "servicename_id":33, "resource_id":5, "command":"qstat", "path":"/opt/sge-6.2/binlx24-x86" } },
+     { "model":"model.Service", "fields": { "id":334, "protocol_id":3, "servicename_id":33, "resource_id":6, "command":"qsub", "path":"/opt/sge-6.2/binlx24-x86" } },
+     { "model":"model.Service", "fields": { "id":335, "protocol_id":3, "servicename_id":33, "resource_id":6, "command":"qstat", "path":"/opt/sge-6.2/binlx24-x86" } },
+
+     { "model":"model.Resource", "fields": {
+              "id":1, "name":"localhost-127.0.0.1", "hostname":"127.0.0.1",
+              "institution":"SDSU", "total_memory_gb":"2", "num_cpus":"2", "num_nodes":"1" }
+     },
+     { "model":"model.Resource", "fields": {
+              "id":2, "name":"dolphin.sdsu.edu", "hostname":"dolphin.sdsu.edu", "institution":"SDSU",
+              "total_memory_gb":"8", "num_cpus":"88", "num_nodes":"44" }
+     },
+     { "model":"model.Resource", "fields": {
+              "id":3, "name":"anthill.sdsu.edu", "hostname":"anthill.sdsu.edu", "institution":"SDSU",
+              "total_memory_gb":"16", "num_cpus":"60", "num_nodes":"60", "memory_per_cpu_gb":"2" }
+     },
+     { "model":"model.Resource", "fields": {
+              "id":4, "name":"pipeline3.acel.sdsu.edu", "hostname":"pipeline3.acel.sdsu.edu", "institution":"SDSU",
+              "total_memory_gb":"4", "num_cpus":"2", "num_nodes":"1", "memory_per_cpu_gb":"2" }
+     },
+     { "model":"model.Resource", "fields": {
+              "id":5, "name":"ranger.tacc.xsede.org", "hostname":"ranger.tacc.xsede.org", "institution":"XSEDE/TACC", "num_nodes":"1460", "total_memory_gb":"11600", "num_cpus":"5840", "memory_per_cpu_gb":"2" }
+     },
+     { "model":"model.Resource", "fields": {
+              "id":6, "name":"lonestar.tacc.xsede.org", "hostname":"lonestar.tacc.xsede.org", "institution":"XSEDE/TACC", "num_nodes":"1460", "total_memory_gb":"11600", "num_cpus":"5840", "memory_per_cpu_gb":"2" }
+     },
+     { "model":"model.Resource", "fields": {
+              "id":7, "name":"trestles.sdsu.edu", "hostname":"trestles.sdsu.edu", "institution":"XSEDE/SDSC",
+              "total_memory_gb":"1", "num_cpus":"1" }
+     },
+
+
+     { "model":"model.QueueInfo", "fields": { "id":1, "queue_name":"normal"} },
+     { "model":"model.QueueInfo", "fields": { "id":2, "queue_name":"workq"} },
+
+     { "model":"model.QueueType", "fields": { "id":1, "name":"Batch", "description":"Batch Queuing System" } },
+     { "model":"model.QueueType", "fields": { "id":2, "name":"Condor", "description":"Condor Queuing System" } },
+     { "model":"model.QueueType", "fields": { "id":3, "name":"Unix", "description":"Unix Queue" } },
+
+     { "model":"model.QueueSystem", "fields": { "id":1, "name":"PBS" , 
+          "path":"/usr/local/pbs/bin" ,
+          "submit":"qsub", "delete":"qdel", "status":"qstat", "other1":"other1", "other2":"other2",
+          "queuetype_id":1 } 
+     }, 
+     { "model":"model.QueueSystem", "fields": { "id":2, "name":"LSF" , 
+          "path":"/usr/local/pbs/bin" ,
+          "submit":"qsub", "delete":"qdel", "status":"qstat", "other1":"other1", "other2":"other2",
+          "queuetype_id":1 } 
+     },
+     { "model":"model.QueueSystem", "fields": { "id":3, "name":"Torque" , 
+          "path":"" ,
+          "submit":"qsub", "delete":"qdel", "status":"qstat", "other1":"other1", "other2":"other2",
+          "queuetype_id":1 } 
+     },
+     { "model":"model.QueueSystem", "fields": { "id":4, "name":"SGE" , 
+          "path":"" ,
+          "submit":"qsub", "delete":"qdel", "status":"qstat", "other1":"other1", "other2":"other2",
+          "queuetype_id":1 } 
+     },
+
+     { "model":"model.QueueService", "fields": { "id":1, 
+          "queuesystem_id":3, "queueinfo_id":2, "resource_id":2 } 
+     },
+     { "model":"model.QueueService", "fields": { "id":2, 
+          "queuesystem_id":4, "queueinfo_id":2, "resource_id":3 } 
+     },
+     { "model":"model.QueueService", "fields": { "id":3, 
+          "queuesystem_id":4, "queueinfo_id":2, "resource_id":5 } 
+     },
+     { "model":"model.QueueService", "fields": { "id":4, 
+          "queuesystem_id":4, "queueinfo_id":2, "resource_id":6 } 
+     },
+     { "model":"model.QueueService", "fields": { "id":5, 
+          "queuesystem_id":3, "queueinfo_id":2, "resource_id":7 } 
+     }
+]

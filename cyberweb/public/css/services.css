@@ -1,0 +1,12 @@
+.noBorder th,.noBorder td {
+    border: 0 !important;
+}
+
+.mainContent{
+	margin: 0 5%;	
+}
+
+.mainHeading {
+	border-bottom: 1px solid;
+	font-size: 17pt;
+}

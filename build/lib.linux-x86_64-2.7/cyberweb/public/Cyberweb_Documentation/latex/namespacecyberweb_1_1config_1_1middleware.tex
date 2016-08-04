@@ -1,0 +1,51 @@
+\hypertarget{namespacecyberweb_1_1config_1_1middleware}{\section{cyberweb\-:\-:config\-:\-:middleware \-Namespace \-Reference}
+\label{namespacecyberweb_1_1config_1_1middleware}\index{cyberweb\-::config\-::middleware@{cyberweb\-::config\-::middleware}}
+}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecyberweb_1_1config_1_1middleware_a2cbc5bd0bfddfadc60d09a097805a5bc}{make\-\_\-app}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\begin{DoxyVerb}
+Pylons middleware initialization
+\end{DoxyVerb}
+ 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{namespacecyberweb_1_1config_1_1middleware_a2cbc5bd0bfddfadc60d09a097805a5bc}{\index{cyberweb\-::config\-::middleware@{cyberweb\-::config\-::middleware}!make\-\_\-app@{make\-\_\-app}}
+\index{make\-\_\-app@{make\-\_\-app}!cyberweb::config::middleware@{cyberweb\-::config\-::middleware}}
+\subsubsection[{make\-\_\-app}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-config.\-middleware.\-make\-\_\-app} (
+\begin{DoxyParamCaption}
+\item[{}]{global\-\_\-conf, }
+\item[{}]{full\-\_\-stack = {\ttfamily \-True}, }
+\item[{}]{static\-\_\-files = {\ttfamily \-True}, }
+\item[{}]{app\-\_\-conf}
+\end{DoxyParamCaption}
+)}}\label{namespacecyberweb_1_1config_1_1middleware_a2cbc5bd0bfddfadc60d09a097805a5bc}
+\begin{DoxyVerb}
+Create a Pylons WSGI application and return it
+
+``global_conf``
+    The inherited configuration for this application. Normally from
+    the [DEFAULT] section of the Paste ini file.
+
+``full_stack``
+    Whether this application provides a full WSGI stack (by default,
+    meaning it handles its own exceptions and errors). Disable
+    full_stack when this application is "managed" by another WSGI
+    middleware.
+
+``static_files``
+    Whether this application serves its own static files; disable
+    when another web server is responsible for serving them.
+
+``app_conf``
+    The application's local configuration. Normally specified in
+    the [app:<name>] section of the Paste ini file (where <name>
+    defaults to main).
+
+\end{DoxyVerb}
+ 

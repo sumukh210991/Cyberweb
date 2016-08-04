@@ -1,0 +1,138 @@
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message}{\section{cyberweb.\-model.\-message.\-Message \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1message_1_1_message}\index{cyberweb.\-model.\-message.\-Message@{cyberweb.\-model.\-message.\-Message}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_aa5d1325b0daf2345cba01740290707bb}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_ac9f1f3163434d480e60ff96ffff3eee7}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_adcd860a360f48b51993c5014dd97ee2c}{author\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_aed8a61c20b9e55a33e55a147d8ad2424}{message}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_aef0d1e1f257f49eba87ec905d3da3d25}{message\-\_\-type\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_abf7caf2212499da5b2a0c1c2eba9f3de}{date}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_abebc7bb3af50a2a7a1fcdcf13d46269d}{recipient\-\_\-group\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a0c95cc12d552e7cbbccee078a7be0ad7}{receipient\-\_\-user\-\_\-id}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a3e5d1ebf3c88557f6e2ed08a84c21d1f}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a58153115db46046a99f6891ea288eb3a}{message} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a8a9bb47453ab0b2de8aa72c459433bb5}{message\-\_\-type\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key('message\-\_\-type.\-id'),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a3ce22320c52269a795d26a858a67adc9}{author\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key('user.\-id'))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_aae5b48fb8f01c3b2e653f935ed98f049}{recipient\-\_\-user\-\_\-id} = \-Column(\-Integer, \-Foreign\-Key('user.\-id'),nullable=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_aa8fc84662c6fa13d3420d8e60896a3ba}{recipient\-\_\-group\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key('user\-\_\-group.\-id'),nullable=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a2c7864939966d614b08fde4f0c23e84e}{date} = \-Column(\-Date\-Time,default=datetime.\-now())
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_ac1dc675540f98358d193d3e05125e3f0}{author} = relation('\hyperlink{classcyberweb_1_1model_1_1user_1_1_user}{\-User}', primaryjoin=\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a3ce22320c52269a795d26a858a67adc9}{author\-\_\-id} == \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_ab204ad563a4069d43a98083399508934}{\-User.\-id}, backref=backref('messages\-\_\-sent'))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a354a0195a1799c1be9a5dc5600c49789}{recipient\-\_\-user} = relation('\hyperlink{classcyberweb_1_1model_1_1user_1_1_user}{\-User}', primaryjoin=\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_aae5b48fb8f01c3b2e653f935ed98f049}{recipient\-\_\-user\-\_\-id} == \hyperlink{classcyberweb_1_1model_1_1user_1_1_user_ab204ad563a4069d43a98083399508934}{\-User.\-id}, backref=backref('messages\-\_\-by\-\_\-user'))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a6df60917a1d3035d431fdc1603a0fdf2}{recipient\-\_\-group} = relation('\-Group', backref=backref('messages\-\_\-by\-\_\-group'))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1message_1_1_message_a49e056d40eea8cb2a666f2d5d5fcf93c}{message\-\_\-type} = relation('\hyperlink{classcyberweb_1_1model_1_1message_1_1_message_type}{\-Message\-Type}')
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_aa5d1325b0daf2345cba01740290707bb}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-message.\-Message.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{author\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{recipient\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{message = {\ttfamily \-None}, }
+\item[{}]{group = {\ttfamily \-False}, }
+\item[{}]{message\-\_\-type\-\_\-id = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1message_1_1_message_aa5d1325b0daf2345cba01740290707bb}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_ac9f1f3163434d480e60ff96ffff3eee7}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-message.\-Message.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1message_1_1_message_ac9f1f3163434d480e60ff96ffff3eee7}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_ac1dc675540f98358d193d3e05125e3f0}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!author@{author}}
+\index{author@{author}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{author}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::author} = relation('{\bf \-User}', primaryjoin={\bf author\-\_\-id} == {\bf \-User.\-id}, backref=backref('messages\-\_\-sent'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_ac1dc675540f98358d193d3e05125e3f0}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a3ce22320c52269a795d26a858a67adc9}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!author\-\_\-id@{author\-\_\-id}}
+\index{author\-\_\-id@{author\-\_\-id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{author\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::author\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key('user.\-id'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a3ce22320c52269a795d26a858a67adc9}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_adcd860a360f48b51993c5014dd97ee2c}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!author\-\_\-id@{author\-\_\-id}}
+\index{author\-\_\-id@{author\-\_\-id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{author\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::message.\-Message\-::author\-\_\-id}}}\label{classcyberweb_1_1model_1_1message_1_1_message_adcd860a360f48b51993c5014dd97ee2c}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a2c7864939966d614b08fde4f0c23e84e}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!date@{date}}
+\index{date@{date}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{date}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::date} = \-Column(\-Date\-Time,default=datetime.\-now())\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a2c7864939966d614b08fde4f0c23e84e}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_abf7caf2212499da5b2a0c1c2eba9f3de}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!date@{date}}
+\index{date@{date}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::message.\-Message\-::date}}}\label{classcyberweb_1_1model_1_1message_1_1_message_abf7caf2212499da5b2a0c1c2eba9f3de}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a3e5d1ebf3c88557f6e2ed08a84c21d1f}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!id@{id}}
+\index{id@{id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a3e5d1ebf3c88557f6e2ed08a84c21d1f}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a58153115db46046a99f6891ea288eb3a}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!message@{message}}
+\index{message@{message}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::message} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a58153115db46046a99f6891ea288eb3a}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_aed8a61c20b9e55a33e55a147d8ad2424}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!message@{message}}
+\index{message@{message}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{message}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::message.\-Message\-::message}}}\label{classcyberweb_1_1model_1_1message_1_1_message_aed8a61c20b9e55a33e55a147d8ad2424}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a49e056d40eea8cb2a666f2d5d5fcf93c}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!message\-\_\-type@{message\-\_\-type}}
+\index{message\-\_\-type@{message\-\_\-type}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{message\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::message\-\_\-type} = relation('{\bf \-Message\-Type}')\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a49e056d40eea8cb2a666f2d5d5fcf93c}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a8a9bb47453ab0b2de8aa72c459433bb5}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!message\-\_\-type\-\_\-id@{message\-\_\-type\-\_\-id}}
+\index{message\-\_\-type\-\_\-id@{message\-\_\-type\-\_\-id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{message\-\_\-type\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::message\-\_\-type\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key('message\-\_\-type.\-id'),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a8a9bb47453ab0b2de8aa72c459433bb5}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_aef0d1e1f257f49eba87ec905d3da3d25}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!message\-\_\-type\-\_\-id@{message\-\_\-type\-\_\-id}}
+\index{message\-\_\-type\-\_\-id@{message\-\_\-type\-\_\-id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{message\-\_\-type\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::message.\-Message\-::message\-\_\-type\-\_\-id}}}\label{classcyberweb_1_1model_1_1message_1_1_message_aef0d1e1f257f49eba87ec905d3da3d25}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a0c95cc12d552e7cbbccee078a7be0ad7}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!receipient\-\_\-user\-\_\-id@{receipient\-\_\-user\-\_\-id}}
+\index{receipient\-\_\-user\-\_\-id@{receipient\-\_\-user\-\_\-id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{receipient\-\_\-user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::message.\-Message\-::receipient\-\_\-user\-\_\-id}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a0c95cc12d552e7cbbccee078a7be0ad7}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a6df60917a1d3035d431fdc1603a0fdf2}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!recipient\-\_\-group@{recipient\-\_\-group}}
+\index{recipient\-\_\-group@{recipient\-\_\-group}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{recipient\-\_\-group}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::recipient\-\_\-group} = relation('\-Group', backref=backref('messages\-\_\-by\-\_\-group'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a6df60917a1d3035d431fdc1603a0fdf2}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_aa8fc84662c6fa13d3420d8e60896a3ba}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!recipient\-\_\-group\-\_\-id@{recipient\-\_\-group\-\_\-id}}
+\index{recipient\-\_\-group\-\_\-id@{recipient\-\_\-group\-\_\-id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{recipient\-\_\-group\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::recipient\-\_\-group\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key('user\-\_\-group.\-id'),nullable=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_aa8fc84662c6fa13d3420d8e60896a3ba}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_abebc7bb3af50a2a7a1fcdcf13d46269d}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!recipient\-\_\-group\-\_\-id@{recipient\-\_\-group\-\_\-id}}
+\index{recipient\-\_\-group\-\_\-id@{recipient\-\_\-group\-\_\-id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{recipient\-\_\-group\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::message.\-Message\-::recipient\-\_\-group\-\_\-id}}}\label{classcyberweb_1_1model_1_1message_1_1_message_abebc7bb3af50a2a7a1fcdcf13d46269d}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_a354a0195a1799c1be9a5dc5600c49789}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!recipient\-\_\-user@{recipient\-\_\-user}}
+\index{recipient\-\_\-user@{recipient\-\_\-user}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{recipient\-\_\-user}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::recipient\-\_\-user} = relation('{\bf \-User}', primaryjoin={\bf recipient\-\_\-user\-\_\-id} == {\bf \-User.\-id}, backref=backref('messages\-\_\-by\-\_\-user'))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_a354a0195a1799c1be9a5dc5600c49789}
+\hypertarget{classcyberweb_1_1model_1_1message_1_1_message_aae5b48fb8f01c3b2e653f935ed98f049}{\index{cyberweb\-::model\-::message\-::\-Message@{cyberweb\-::model\-::message\-::\-Message}!recipient\-\_\-user\-\_\-id@{recipient\-\_\-user\-\_\-id}}
+\index{recipient\-\_\-user\-\_\-id@{recipient\-\_\-user\-\_\-id}!cyberweb::model::message::Message@{cyberweb\-::model\-::message\-::\-Message}}
+\subsubsection[{recipient\-\_\-user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::message.\-Message\-::recipient\-\_\-user\-\_\-id} = \-Column(\-Integer, \-Foreign\-Key('user.\-id'),nullable=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1message_1_1_message_aae5b48fb8f01c3b2e653f935ed98f049}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{message_8py}{message.\-py}\end{DoxyCompactItemize}

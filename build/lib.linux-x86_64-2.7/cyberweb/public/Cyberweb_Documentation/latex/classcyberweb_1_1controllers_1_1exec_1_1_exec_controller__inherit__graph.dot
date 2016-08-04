@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="cyberweb.controllers.exec.ExecController",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="cyberweb.lib.base.BaseController",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1lib_1_1base_1_1_base_controller.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="WSGIController",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

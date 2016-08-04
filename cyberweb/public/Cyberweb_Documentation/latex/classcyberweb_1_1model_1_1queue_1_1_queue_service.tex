@@ -1,0 +1,80 @@
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service}{\section{cyberweb.\-model.\-queue.\-Queue\-Service \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1queue_1_1_queue_service}\index{cyberweb.\-model.\-queue.\-Queue\-Service@{cyberweb.\-model.\-queue.\-Queue\-Service}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_a4757fd20a05ed8863a45a9cb8643cee2}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9ba50e07fa0d5d6fdc83f8a301c3e47d}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_ac050144cc8cf04dbb6470b349539fe98}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9704424ca9cebb23aa848a46e2a8a9a8}{queuesystem\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}queuesystem.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_af2a014d03512574ee27077fe122cbbbb}{queueinfo\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}queueinfo.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9214c520eaa799da419a8fb2a8a0b52e}{resource\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}resource.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_a2ee4db39e5affad045e94d9c16cecf6e}{queuesystem} = relation(\hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_system}{\-Queue\-System})
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_aff34299eb8ecfc33955249be5805c3e5}{queueinfo} = relation(\hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_info}{\-Queue\-Info})
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1queue_1_1_queue_service_afe3030bebd4b7fe17eb1abf6391fd6d0}{resource} = relation(\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource}{\-Resource})
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_a4757fd20a05ed8863a45a9cb8643cee2}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-queue.\-Queue\-Service.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_a4757fd20a05ed8863a45a9cb8643cee2}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9ba50e07fa0d5d6fdc83f8a301c3e47d}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-queue.\-Queue\-Service.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9ba50e07fa0d5d6fdc83f8a301c3e47d}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_ac050144cc8cf04dbb6470b349539fe98}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!id@{id}}
+\index{id@{id}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-Service\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_ac050144cc8cf04dbb6470b349539fe98}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_aff34299eb8ecfc33955249be5805c3e5}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!queueinfo@{queueinfo}}
+\index{queueinfo@{queueinfo}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{queueinfo}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-Service\-::queueinfo} = relation({\bf \-Queue\-Info})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_aff34299eb8ecfc33955249be5805c3e5}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_af2a014d03512574ee27077fe122cbbbb}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!queueinfo\-\_\-id@{queueinfo\-\_\-id}}
+\index{queueinfo\-\_\-id@{queueinfo\-\_\-id}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{queueinfo\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-Service\-::queueinfo\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}queueinfo.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_af2a014d03512574ee27077fe122cbbbb}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_a2ee4db39e5affad045e94d9c16cecf6e}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!queuesystem@{queuesystem}}
+\index{queuesystem@{queuesystem}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{queuesystem}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-Service\-::queuesystem} = relation({\bf \-Queue\-System})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_a2ee4db39e5affad045e94d9c16cecf6e}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9704424ca9cebb23aa848a46e2a8a9a8}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!queuesystem\-\_\-id@{queuesystem\-\_\-id}}
+\index{queuesystem\-\_\-id@{queuesystem\-\_\-id}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{queuesystem\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-Service\-::queuesystem\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}queuesystem.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9704424ca9cebb23aa848a46e2a8a9a8}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_afe3030bebd4b7fe17eb1abf6391fd6d0}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!resource@{resource}}
+\index{resource@{resource}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{resource}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-Service\-::resource} = relation({\bf \-Resource})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_afe3030bebd4b7fe17eb1abf6391fd6d0}
+\hypertarget{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9214c520eaa799da419a8fb2a8a0b52e}{\index{cyberweb\-::model\-::queue\-::\-Queue\-Service@{cyberweb\-::model\-::queue\-::\-Queue\-Service}!resource\-\_\-id@{resource\-\_\-id}}
+\index{resource\-\_\-id@{resource\-\_\-id}!cyberweb::model::queue::QueueService@{cyberweb\-::model\-::queue\-::\-Queue\-Service}}
+\subsubsection[{resource\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::queue.\-Queue\-Service\-::resource\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}resource.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1queue_1_1_queue_service_a9214c520eaa799da419a8fb2a8a0b52e}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{queue_8py}{queue.\-py}\end{DoxyCompactItemize}

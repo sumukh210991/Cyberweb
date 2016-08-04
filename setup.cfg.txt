@@ -1,0 +1,32 @@
+[egg_info]
+tag_build = dev
+tag_svn_revision = true
+
+[easy_install]
+#  find_links = http://www.pylonshq.com/download/
+find_links = http://effbot.org/downloads#elementtree
+
+[nosetests]
+with-pylons = test.ini
+
+# Babel configuration
+[compile_catalog]
+domain = cyberweb
+directory = cyberweb/i18n
+statistics = true
+
+[extract_messages]
+add_comments = TRANSLATORS:
+output_file = cyberweb/i18n/cyberweb.pot
+width = 80
+
+[init_catalog]
+domain = cyberweb
+input_file = cyberweb/i18n/cyberweb.pot
+output_dir = cyberweb/i18n
+
+[update_catalog]
+domain = cyberweb
+input_file = cyberweb/i18n/cyberweb.pot
+output_dir = cyberweb/i18n
+previous = true

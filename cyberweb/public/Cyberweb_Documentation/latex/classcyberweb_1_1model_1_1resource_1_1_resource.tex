@@ -1,0 +1,157 @@
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource}{\section{cyberweb.\-model.\-resource.\-Resource \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1resource_1_1_resource}\index{cyberweb.\-model.\-resource.\-Resource@{cyberweb.\-model.\-resource.\-Resource}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a7b8ce7b4884d39dae3d5c65af15f972f}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a8e48afd32f2e4a216a377b2bf3fb14d8}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a8b41aff006149c95927f5ac1f8b48d6c}{name}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_acb12946572c67f984297164790c65c6c}{hostname}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a149b0c8d741c5de34bcc44fe6179c750}{institution}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_ae93dd196a260853891e73b167ef6eb4c}{total\-\_\-memory\-\_\-gb}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_aca02955b128ae84c1697b028bfadb7f0}{num\-\_\-cpus}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_aca52ea8858cb310a6986ec15713c9146}{memory\-\_\-per\-\_\-cpu\-\_\-gb}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a8d5bcf52ac66acea42afdf58bb46a3e8}{num\-\_\-nodes}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a7ed822ef7fc7ea72022b2708de7548ee}{path}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a930974dd2980d2e8f6b20e7951dc722a}{queue}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_ad625a2803739087ed51372c847e68cbb}{id} = \-Column(\-Integer, primary\-\_\-key=\-True, autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_aef8ab03dbaf1d496c9f774338e8f76b6}{name} = \-Column(\-String(50))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_ab45131a1566287845e922105eaef484b}{hostname} = \-Column(\-String(100))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a08db9e029bcecdb06f0475ad81daee66}{institution} = \-Column(\-String(50))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a0468564b34cf99a971add27ba17aa722}{total\-\_\-memory\-\_\-gb} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a724fb44ed24795a8744ca793c61fd364}{num\-\_\-cpus} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a60a998729e26729c721aa7641816a842}{memory\-\_\-per\-\_\-cpu\-\_\-gb} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a705457c9454657b0f5d6a8f393fce95f}{num\-\_\-nodes} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a7705a633cedfd9c7a5e0dd853ae54055}{path} = \-Column(\-String(255))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_acc3e0c62c1ebe65469608e78b976069a}{queue} = \-Column(\-String(24))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1resource_1_1_resource_a109a1d9d36401fb5bba09d050a14fe3f}{insert\-\_\-date} = \-Column(\-Date\-Time,default=datetime.\-now())
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a7b8ce7b4884d39dae3d5c65af15f972f}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-resource.\-Resource.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{name = {\ttfamily \-None}, }
+\item[{}]{hostname = {\ttfamily \-None}, }
+\item[{}]{institution = {\ttfamily ''}, }
+\item[{}]{total\-\_\-memory\-\_\-gb = {\ttfamily \-None}, }
+\item[{}]{num\-\_\-cpus = {\ttfamily \-None}, }
+\item[{}]{memory\-\_\-per\-\_\-cpu\-\_\-gb = {\ttfamily \-None}, }
+\item[{}]{num\-\_\-nodes = {\ttfamily \-None}, }
+\item[{}]{path = {\ttfamily \-None}, }
+\item[{}]{queue = {\ttfamily \-None}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a7b8ce7b4884d39dae3d5c65af15f972f}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a8e48afd32f2e4a216a377b2bf3fb14d8}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-resource.\-Resource.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a8e48afd32f2e4a216a377b2bf3fb14d8}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_ab45131a1566287845e922105eaef484b}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!hostname@{hostname}}
+\index{hostname@{hostname}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{hostname}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::hostname} = \-Column(\-String(100))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_ab45131a1566287845e922105eaef484b}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_acb12946572c67f984297164790c65c6c}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!hostname@{hostname}}
+\index{hostname@{hostname}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{hostname}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::hostname}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_acb12946572c67f984297164790c65c6c}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_ad625a2803739087ed51372c847e68cbb}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!id@{id}}
+\index{id@{id}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::id} = \-Column(\-Integer, primary\-\_\-key=\-True, autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_ad625a2803739087ed51372c847e68cbb}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a109a1d9d36401fb5bba09d050a14fe3f}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!insert\-\_\-date@{insert\-\_\-date}}
+\index{insert\-\_\-date@{insert\-\_\-date}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{insert\-\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::insert\-\_\-date} = \-Column(\-Date\-Time,default=datetime.\-now())\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a109a1d9d36401fb5bba09d050a14fe3f}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a08db9e029bcecdb06f0475ad81daee66}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!institution@{institution}}
+\index{institution@{institution}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{institution}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::institution} = \-Column(\-String(50))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a08db9e029bcecdb06f0475ad81daee66}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a149b0c8d741c5de34bcc44fe6179c750}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!institution@{institution}}
+\index{institution@{institution}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{institution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::institution}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a149b0c8d741c5de34bcc44fe6179c750}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a60a998729e26729c721aa7641816a842}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!memory\-\_\-per\-\_\-cpu\-\_\-gb@{memory\-\_\-per\-\_\-cpu\-\_\-gb}}
+\index{memory\-\_\-per\-\_\-cpu\-\_\-gb@{memory\-\_\-per\-\_\-cpu\-\_\-gb}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{memory\-\_\-per\-\_\-cpu\-\_\-gb}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::memory\-\_\-per\-\_\-cpu\-\_\-gb} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a60a998729e26729c721aa7641816a842}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_aca52ea8858cb310a6986ec15713c9146}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!memory\-\_\-per\-\_\-cpu\-\_\-gb@{memory\-\_\-per\-\_\-cpu\-\_\-gb}}
+\index{memory\-\_\-per\-\_\-cpu\-\_\-gb@{memory\-\_\-per\-\_\-cpu\-\_\-gb}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{memory\-\_\-per\-\_\-cpu\-\_\-gb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::memory\-\_\-per\-\_\-cpu\-\_\-gb}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_aca52ea8858cb310a6986ec15713c9146}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_aef8ab03dbaf1d496c9f774338e8f76b6}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!name@{name}}
+\index{name@{name}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::name} = \-Column(\-String(50))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_aef8ab03dbaf1d496c9f774338e8f76b6}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a8b41aff006149c95927f5ac1f8b48d6c}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!name@{name}}
+\index{name@{name}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::name}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a8b41aff006149c95927f5ac1f8b48d6c}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a724fb44ed24795a8744ca793c61fd364}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!num\-\_\-cpus@{num\-\_\-cpus}}
+\index{num\-\_\-cpus@{num\-\_\-cpus}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{num\-\_\-cpus}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::num\-\_\-cpus} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a724fb44ed24795a8744ca793c61fd364}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_aca02955b128ae84c1697b028bfadb7f0}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!num\-\_\-cpus@{num\-\_\-cpus}}
+\index{num\-\_\-cpus@{num\-\_\-cpus}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{num\-\_\-cpus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::num\-\_\-cpus}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_aca02955b128ae84c1697b028bfadb7f0}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a705457c9454657b0f5d6a8f393fce95f}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!num\-\_\-nodes@{num\-\_\-nodes}}
+\index{num\-\_\-nodes@{num\-\_\-nodes}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{num\-\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::num\-\_\-nodes} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a705457c9454657b0f5d6a8f393fce95f}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a8d5bcf52ac66acea42afdf58bb46a3e8}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!num\-\_\-nodes@{num\-\_\-nodes}}
+\index{num\-\_\-nodes@{num\-\_\-nodes}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{num\-\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::num\-\_\-nodes}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a8d5bcf52ac66acea42afdf58bb46a3e8}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a7705a633cedfd9c7a5e0dd853ae54055}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!path@{path}}
+\index{path@{path}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::path} = \-Column(\-String(255))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a7705a633cedfd9c7a5e0dd853ae54055}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a7ed822ef7fc7ea72022b2708de7548ee}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!path@{path}}
+\index{path@{path}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::path}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a7ed822ef7fc7ea72022b2708de7548ee}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_acc3e0c62c1ebe65469608e78b976069a}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!queue@{queue}}
+\index{queue@{queue}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{queue}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::queue} = \-Column(\-String(24))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_acc3e0c62c1ebe65469608e78b976069a}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a930974dd2980d2e8f6b20e7951dc722a}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!queue@{queue}}
+\index{queue@{queue}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{queue}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::queue}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a930974dd2980d2e8f6b20e7951dc722a}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_a0468564b34cf99a971add27ba17aa722}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!total\-\_\-memory\-\_\-gb@{total\-\_\-memory\-\_\-gb}}
+\index{total\-\_\-memory\-\_\-gb@{total\-\_\-memory\-\_\-gb}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{total\-\_\-memory\-\_\-gb}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::resource.\-Resource\-::total\-\_\-memory\-\_\-gb} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_a0468564b34cf99a971add27ba17aa722}
+\hypertarget{classcyberweb_1_1model_1_1resource_1_1_resource_ae93dd196a260853891e73b167ef6eb4c}{\index{cyberweb\-::model\-::resource\-::\-Resource@{cyberweb\-::model\-::resource\-::\-Resource}!total\-\_\-memory\-\_\-gb@{total\-\_\-memory\-\_\-gb}}
+\index{total\-\_\-memory\-\_\-gb@{total\-\_\-memory\-\_\-gb}!cyberweb::model::resource::Resource@{cyberweb\-::model\-::resource\-::\-Resource}}
+\subsubsection[{total\-\_\-memory\-\_\-gb}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::resource.\-Resource\-::total\-\_\-memory\-\_\-gb}}}\label{classcyberweb_1_1model_1_1resource_1_1_resource_ae93dd196a260853891e73b167ef6eb4c}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{resource_8py}{resource.\-py}\end{DoxyCompactItemize}

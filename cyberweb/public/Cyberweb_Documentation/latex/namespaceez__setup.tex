@@ -1,0 +1,118 @@
+\hypertarget{namespaceez__setup}{\section{ez\-\_\-setup \-Namespace \-Reference}
+\label{namespaceez__setup}\index{ez\-\_\-setup@{ez\-\_\-setup}}
+}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceez__setup_a66dbd61665af1fc8f89b60d4978bee40}{use\-\_\-setuptools}
+\item 
+def \hyperlink{namespaceez__setup_a5676d254d60c5d43f5ed67e3141878d2}{download\-\_\-setuptools}
+\item 
+def \hyperlink{namespaceez__setup_a560f04bfc77f23edc5ff771a484dd3d4}{main}
+\item 
+def \hyperlink{namespaceez__setup_abf5e2589897175c0720336a5bce96511}{update\-\_\-md5}
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespaceez__setup_ab73a46fbe5deb3770b318dc24d185db4}{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N} = \char`\"{}0.\-6c9\char`\"{}
+\item 
+string \hyperlink{namespaceez__setup_acb0ebf8437227029f912f8608888d3ab}{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L} = \char`\"{}http\-://pypi.\-python.\-org/packages/\%s/s/setuptools/\char`\"{}
+\item 
+dictionary \hyperlink{namespaceez__setup_ad479fbda506c99dd951a86881ef69d07}{md5\-\_\-data}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{namespaceez__setup_a5676d254d60c5d43f5ed67e3141878d2}{\index{ez\-\_\-setup@{ez\-\_\-setup}!download\-\_\-setuptools@{download\-\_\-setuptools}}
+\index{download\-\_\-setuptools@{download\-\_\-setuptools}!ez_setup@{ez\-\_\-setup}}
+\subsubsection[{download\-\_\-setuptools}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf ez\-\_\-setup.\-download\-\_\-setuptools} (
+\begin{DoxyParamCaption}
+\item[{}]{version = {\ttfamily \-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N}, }
+\item[{}]{download\-\_\-base = {\ttfamily \-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L}, }
+\item[{}]{to\-\_\-dir = {\ttfamily os.curdir}, }
+\item[{}]{delay = {\ttfamily 15}}
+\end{DoxyParamCaption}
+)}}\label{namespaceez__setup_a5676d254d60c5d43f5ed67e3141878d2}
+\begin{DoxyVerb}Download setuptools from a specified location and return its filename
+
+`version` should be a valid setuptools version number that is available
+as an egg for download under the `download_base` URL (which should end
+with a '/'). `to_dir` is the directory where the egg will be downloaded.
+`delay` is the number of seconds to pause before an actual download attempt.
+\end{DoxyVerb}
+ 
+
+\-Here is the caller graph for this function\-:
+
+
+\hypertarget{namespaceez__setup_a560f04bfc77f23edc5ff771a484dd3d4}{\index{ez\-\_\-setup@{ez\-\_\-setup}!main@{main}}
+\index{main@{main}!ez_setup@{ez\-\_\-setup}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf ez\-\_\-setup.\-main} (
+\begin{DoxyParamCaption}
+\item[{}]{argv, }
+\item[{}]{version = {\ttfamily \-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+\end{DoxyParamCaption}
+)}}\label{namespaceez__setup_a560f04bfc77f23edc5ff771a484dd3d4}
+\begin{DoxyVerb}Install or upgrade setuptools and EasyInstall\end{DoxyVerb}
+ 
+
+\-Here is the call graph for this function\-:
+
+
+
+
+\-Here is the caller graph for this function\-:
+
+
+\hypertarget{namespaceez__setup_abf5e2589897175c0720336a5bce96511}{\index{ez\-\_\-setup@{ez\-\_\-setup}!update\-\_\-md5@{update\-\_\-md5}}
+\index{update\-\_\-md5@{update\-\_\-md5}!ez_setup@{ez\-\_\-setup}}
+\subsubsection[{update\-\_\-md5}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf ez\-\_\-setup.\-update\-\_\-md5} (
+\begin{DoxyParamCaption}
+\item[{}]{filenames}
+\end{DoxyParamCaption}
+)}}\label{namespaceez__setup_abf5e2589897175c0720336a5bce96511}
+\begin{DoxyVerb}Update our built-in md5 registry\end{DoxyVerb}
+ 
+
+\-Here is the call graph for this function\-:
+
+
+\hypertarget{namespaceez__setup_a66dbd61665af1fc8f89b60d4978bee40}{\index{ez\-\_\-setup@{ez\-\_\-setup}!use\-\_\-setuptools@{use\-\_\-setuptools}}
+\index{use\-\_\-setuptools@{use\-\_\-setuptools}!ez_setup@{ez\-\_\-setup}}
+\subsubsection[{use\-\_\-setuptools}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf ez\-\_\-setup.\-use\-\_\-setuptools} (
+\begin{DoxyParamCaption}
+\item[{}]{version = {\ttfamily \-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N}, }
+\item[{}]{download\-\_\-base = {\ttfamily \-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L}, }
+\item[{}]{to\-\_\-dir = {\ttfamily os.curdir}, }
+\item[{}]{download\-\_\-delay = {\ttfamily 15}}
+\end{DoxyParamCaption}
+)}}\label{namespaceez__setup_a66dbd61665af1fc8f89b60d4978bee40}
+\begin{DoxyVerb}Automatically find/download setuptools and make it available on sys.path
+
+`version` should be a valid setuptools version number that is available
+as an egg for download under the `download_base` URL (which should end with
+a '/').  `to_dir` is the directory where setuptools will be downloaded, if
+it is not already available.  If `download_delay` is specified, it should
+be the number of seconds that will be paused before initiating a download,
+should one be required.  If an older version of setuptools is installed,
+this routine will print a message to ``sys.stderr`` and raise SystemExit in
+an attempt to abort the calling script.
+\end{DoxyVerb}
+ 
+
+\-Here is the call graph for this function\-:
+
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{namespaceez__setup_acb0ebf8437227029f912f8608888d3ab}{\index{ez\-\_\-setup@{ez\-\_\-setup}!\-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L@{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L}}
+\index{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L@{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L}!ez_setup@{ez\-\_\-setup}}
+\subsubsection[{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf ez\-\_\-setup\-::\-D\-E\-F\-A\-U\-L\-T\-\_\-\-U\-R\-L} = \char`\"{}http\-://pypi.\-python.\-org/packages/\%s/s/setuptools/\char`\"{}}}\label{namespaceez__setup_acb0ebf8437227029f912f8608888d3ab}
+\hypertarget{namespaceez__setup_ab73a46fbe5deb3770b318dc24d185db4}{\index{ez\-\_\-setup@{ez\-\_\-setup}!\-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N@{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+\index{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N@{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N}!ez_setup@{ez\-\_\-setup}}
+\subsubsection[{\-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf ez\-\_\-setup\-::\-D\-E\-F\-A\-U\-L\-T\-\_\-\-V\-E\-R\-S\-I\-O\-N} = \char`\"{}0.\-6c9\char`\"{}}}\label{namespaceez__setup_ab73a46fbe5deb3770b318dc24d185db4}
+\hypertarget{namespaceez__setup_ad479fbda506c99dd951a86881ef69d07}{\index{ez\-\_\-setup@{ez\-\_\-setup}!md5\-\_\-data@{md5\-\_\-data}}
+\index{md5\-\_\-data@{md5\-\_\-data}!ez_setup@{ez\-\_\-setup}}
+\subsubsection[{md5\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}dictionary {\bf ez\-\_\-setup\-::md5\-\_\-data}}}\label{namespaceez__setup_ad479fbda506c99dd951a86881ef69d07}

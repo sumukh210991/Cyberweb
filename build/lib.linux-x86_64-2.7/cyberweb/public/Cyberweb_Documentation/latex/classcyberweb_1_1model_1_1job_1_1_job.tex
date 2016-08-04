@@ -1,0 +1,138 @@
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job}{\section{cyberweb.\-model.\-job.\-Job \-Class \-Reference}
+\label{classcyberweb_1_1model_1_1job_1_1_job}\index{cyberweb.\-model.\-job.\-Job@{cyberweb.\-model.\-job.\-Job}}
+}
+
+
+\-Inherits \-Base.
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a9c85d9223796ee59c4cf7c1807a1f4af}{\-\_\-\-\_\-init\-\_\-\-\_\-}
+\item 
+def \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_adbffcdd62fd927e759cfa8e4b4f39c49}{\-\_\-\-\_\-repr\-\_\-\-\_\-}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a8f16116c94152d3ba5c71f35fbf80bf4}{user\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_job_ae6aef8282dec98dd18da1ed37018532c}{name}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a61f84cb0b1c42c746485742f5246153c}{service\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a1b2c3d9f599a97ce4186579cf60a4a9b}{parent\-\_\-job\-\_\-id}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_job_ad1d8d29390159b2b69c9805a8fdd0c09}{submit\-\_\-time}
+\item 
+\hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a6492a839b12044d64a0b094ed4f8dbf5}{state}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a98bf1c7292121b428c1273b5ff4db97f}{id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a348745d1266dbc6eeb03251e517a7b56}{name} = \-Column(\-String(128))
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_abfccdaa55a0e7e65b6c17ea04c221cc7}{user\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}user.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a3ace0cfb6a70d37312e399161b80a04e}{service\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}service.\-id\char`\"{}),nullable=\-False)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_aa3b987b82ebb6960bf63389768d49df9}{parent\-\_\-job\-\_\-id} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a05db9771009bc26b3aba7a102d3da1e6}{state} = \-Column(\-Integer)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_aea1f925f65afd7d6d3e4f432e66642a6}{submit\-\_\-time} = \-Column(\-Date\-Time,default=datetime.\-now())
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a8321da9488235ad4077bace5538e2ced}{start\-\_\-time} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_acb11812580f3c6ef12c6ca493fa92c62}{end\-\_\-time} = \-Column(\-Date\-Time)
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a4388cc5ef8e159413c45a37d6435c1a8}{user} = relation(\hyperlink{classcyberweb_1_1model_1_1user_1_1_user}{\-User})
+\item 
+tuple \hyperlink{classcyberweb_1_1model_1_1job_1_1_job_a05f978f19c87a0293f730e6b71a4e74c}{service} = relation(\-Service)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a9c85d9223796ee59c4cf7c1807a1f4af}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-init\-\_\-\-\_\-@{\-\_\-\-\_\-init\-\_\-\-\_\-}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{\-\_\-\-\_\-init\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-job.\-Job.\-\_\-\-\_\-init\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{user\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{service\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{name = {\ttfamily \-None}, }
+\item[{}]{parent\-\_\-job\-\_\-id = {\ttfamily \-None}, }
+\item[{}]{submit\-\_\-time = {\ttfamily datetime.now()}}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1job_1_1_job_a9c85d9223796ee59c4cf7c1807a1f4af}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_adbffcdd62fd927e759cfa8e4b4f39c49}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}}
+\index{\-\_\-\-\_\-repr\-\_\-\-\_\-@{\-\_\-\-\_\-repr\-\_\-\-\_\-}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{\-\_\-\-\_\-repr\-\_\-\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}def {\bf cyberweb.\-model.\-job.\-Job.\-\_\-\-\_\-repr\-\_\-\-\_\-} (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}}\label{classcyberweb_1_1model_1_1job_1_1_job_adbffcdd62fd927e759cfa8e4b4f39c49}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_acb11812580f3c6ef12c6ca493fa92c62}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!end\-\_\-time@{end\-\_\-time}}
+\index{end\-\_\-time@{end\-\_\-time}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{end\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::end\-\_\-time} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_acb11812580f3c6ef12c6ca493fa92c62}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a98bf1c7292121b428c1273b5ff4db97f}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!id@{id}}
+\index{id@{id}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::id} = \-Column(\-Integer,primary\-\_\-key=\-True,autoincrement=\-True)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a98bf1c7292121b428c1273b5ff4db97f}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a348745d1266dbc6eeb03251e517a7b56}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!name@{name}}
+\index{name@{name}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::name} = \-Column(\-String(128))\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a348745d1266dbc6eeb03251e517a7b56}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_ae6aef8282dec98dd18da1ed37018532c}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!name@{name}}
+\index{name@{name}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Job\-::name}}}\label{classcyberweb_1_1model_1_1job_1_1_job_ae6aef8282dec98dd18da1ed37018532c}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_aa3b987b82ebb6960bf63389768d49df9}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!parent\-\_\-job\-\_\-id@{parent\-\_\-job\-\_\-id}}
+\index{parent\-\_\-job\-\_\-id@{parent\-\_\-job\-\_\-id}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{parent\-\_\-job\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::parent\-\_\-job\-\_\-id} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_aa3b987b82ebb6960bf63389768d49df9}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a1b2c3d9f599a97ce4186579cf60a4a9b}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!parent\-\_\-job\-\_\-id@{parent\-\_\-job\-\_\-id}}
+\index{parent\-\_\-job\-\_\-id@{parent\-\_\-job\-\_\-id}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{parent\-\_\-job\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Job\-::parent\-\_\-job\-\_\-id}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a1b2c3d9f599a97ce4186579cf60a4a9b}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a05f978f19c87a0293f730e6b71a4e74c}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!service@{service}}
+\index{service@{service}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{service}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::service} = relation(\-Service)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a05f978f19c87a0293f730e6b71a4e74c}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a3ace0cfb6a70d37312e399161b80a04e}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!service\-\_\-id@{service\-\_\-id}}
+\index{service\-\_\-id@{service\-\_\-id}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{service\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::service\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}service.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a3ace0cfb6a70d37312e399161b80a04e}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a61f84cb0b1c42c746485742f5246153c}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!service\-\_\-id@{service\-\_\-id}}
+\index{service\-\_\-id@{service\-\_\-id}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{service\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Job\-::service\-\_\-id}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a61f84cb0b1c42c746485742f5246153c}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a8321da9488235ad4077bace5538e2ced}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!start\-\_\-time@{start\-\_\-time}}
+\index{start\-\_\-time@{start\-\_\-time}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{start\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::start\-\_\-time} = \-Column(\-Date\-Time)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a8321da9488235ad4077bace5538e2ced}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a05db9771009bc26b3aba7a102d3da1e6}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!state@{state}}
+\index{state@{state}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::state} = \-Column(\-Integer)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a05db9771009bc26b3aba7a102d3da1e6}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a6492a839b12044d64a0b094ed4f8dbf5}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!state@{state}}
+\index{state@{state}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Job\-::state}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a6492a839b12044d64a0b094ed4f8dbf5}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_aea1f925f65afd7d6d3e4f432e66642a6}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!submit\-\_\-time@{submit\-\_\-time}}
+\index{submit\-\_\-time@{submit\-\_\-time}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{submit\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::submit\-\_\-time} = \-Column(\-Date\-Time,default=datetime.\-now())\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_aea1f925f65afd7d6d3e4f432e66642a6}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_ad1d8d29390159b2b69c9805a8fdd0c09}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!submit\-\_\-time@{submit\-\_\-time}}
+\index{submit\-\_\-time@{submit\-\_\-time}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{submit\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Job\-::submit\-\_\-time}}}\label{classcyberweb_1_1model_1_1job_1_1_job_ad1d8d29390159b2b69c9805a8fdd0c09}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a4388cc5ef8e159413c45a37d6435c1a8}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!user@{user}}
+\index{user@{user}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::user} = relation({\bf \-User})\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a4388cc5ef8e159413c45a37d6435c1a8}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_abfccdaa55a0e7e65b6c17ea04c221cc7}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!user\-\_\-id@{user\-\_\-id}}
+\index{user\-\_\-id@{user\-\_\-id}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}tuple {\bf cyberweb\-::model\-::job.\-Job\-::user\-\_\-id} = \-Column(\-Integer,\-Foreign\-Key(\char`\"{}user.\-id\char`\"{}),nullable=\-False)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{classcyberweb_1_1model_1_1job_1_1_job_abfccdaa55a0e7e65b6c17ea04c221cc7}
+\hypertarget{classcyberweb_1_1model_1_1job_1_1_job_a8f16116c94152d3ba5c71f35fbf80bf4}{\index{cyberweb\-::model\-::job\-::\-Job@{cyberweb\-::model\-::job\-::\-Job}!user\-\_\-id@{user\-\_\-id}}
+\index{user\-\_\-id@{user\-\_\-id}!cyberweb::model::job::Job@{cyberweb\-::model\-::job\-::\-Job}}
+\subsubsection[{user\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cyberweb\-::model\-::job.\-Job\-::user\-\_\-id}}}\label{classcyberweb_1_1model_1_1job_1_1_job_a8f16116c94152d3ba5c71f35fbf80bf4}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+latest\-\_\-cyberweb\-\_\-localhost/cyberweb/model/\hyperlink{job_8py}{job.\-py}\end{DoxyCompactItemize}

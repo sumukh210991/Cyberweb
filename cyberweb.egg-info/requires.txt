@@ -1,0 +1,5 @@
+Pylons>=1.0
+SQLAlchemy>=0.5
+config>=0.3.7
+AuthKit>=0.4.5
+FormAlchemy>=1.3.5

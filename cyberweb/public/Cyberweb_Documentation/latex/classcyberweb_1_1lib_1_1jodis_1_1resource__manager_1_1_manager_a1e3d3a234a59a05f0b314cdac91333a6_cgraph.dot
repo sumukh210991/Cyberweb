@@ -1,0 +1,9 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="cyberweb.lib.jodis.resource_manager.Manager.addMyResource",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="cyberweb.lib.jodis.resource_manager.Manager.addResource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcyberweb_1_1lib_1_1jodis_1_1resource__manager_1_1_manager.html#a2012f57edf3fc65e1387581b0f7d3af7"];
+}
